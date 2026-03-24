@@ -1,8 +1,7 @@
-export const login = async () => {
-  return {
-    token: 'fake-token',
-    user: {
-      name: 'Tony',
-    },
-  };
+export const fakeLogin = async () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve({ token: 'fake-token' });
+    }, 500);
+  });
 };
