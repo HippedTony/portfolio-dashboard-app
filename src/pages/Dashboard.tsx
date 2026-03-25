@@ -1,6 +1,6 @@
 function Dashboard() {
   return (
-    <div>Dashboard</div>
+    <div className="mt-30">Dashboard</div>
   )
 }
 

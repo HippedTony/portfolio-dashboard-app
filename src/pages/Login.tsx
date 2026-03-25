@@ -13,7 +13,7 @@ function Login() {
     navigate('/dashboard');
   };
 
-  return <button onClick={handleLogin}>Login</button>;
+  return <button className='mt-30' onClick={handleLogin}>Login</button>;
 }
 
 export default Login;
