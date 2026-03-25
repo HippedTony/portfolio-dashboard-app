@@ -1,0 +1,54 @@
+{
+  "portfolio": {
+    "navbar": {
+      "home": "Inicio",
+      "dashboard": "Panel",
+      "login": "Iniciar sesión",
+      "logout": "Cerrar sesión"
+    },
+    "hero": {
+      "description": "Desarrollador Frontend especializado en React y expriencias 3D",
+      "projects": "Ver proyectos"
+    },
+    "about": {
+      "title": "Sobre mí",
+      "description": "Desarrollador Frontend con expriencia en aplicaciones web modernas usando React, NextJS y arquitecturas escalables. He trabajado en sistemas en tiempo real para gestión de drones y dashboards complejos.",
+      "experience": "Experiencia",
+      "professionalExperience": [
+        {
+          "company": "Spacelab MX",
+          "role": "Desarrollador Frontend",
+          "period": "2022 - 2025",
+          "description": "Desarrollo de dashboards en tiempo real, visualización de drones, mapas interactivos y sistemas complejos."
+        },
+        {
+          "company": "Showmac Entertainment",
+          "role": "Desarrollador Full Stack",
+          "period": "2021 - 2022",
+          "description": "Desarrollo de aplicaciones web completas con frontend y backend para experiencias interactivas."
+        }
+      ],
+      "skills": "Habilidades"
+    },
+    "projects": {
+      "title": "Proyectos",
+      "items": [
+        {
+          "name": "Drone Dashboard",
+          "description": "Dashboard en tiempo real para monitoreo y gestión de drones con visualización de datos y mapas interactivos.",
+          "technologies": ["React", "TypeScript", "Redux", "WebSockets"]
+        },
+        {
+          "name": "3D Portfolio Experience",
+          "description": "Portafolio interactivo con modelos 3D y shaders personalizados usando React Three Fiber.",
+          "technologies": ["Three.js", "React Three Fiber", "GLSL", "Tailwind"]
+        },
+        {
+          "name": "E-commerce Platform",
+          "description": "Aplicación web completa con carrito de compras, autenticación y gestión de productos.",
+          "technologies": ["Next.js", "Node.js", "MongoDB", "Stripe"]
+        }
+      ]
+    }
+  }
+}

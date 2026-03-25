@@ -1,0 +1,54 @@
+{
+  "portfolio": {
+    "navbar": {
+      "home": "Home",
+      "dashboard": "Dashboard",
+      "login": "Login",
+      "logout": "Logout"
+    },
+    "hero": {
+      "description": "Frontend Developer specialized in React and 3D experiences",
+      "projects": "View projects"
+    },
+    "about": {
+      "title": "About Me",
+      "description": "Frontend Developer with experience in modern web applications using React, Next.js, and scalable architectures. I have worked on real-time systems for drone management and complex dashboards.",
+      "experience": "Experience",
+      "professionalExperience": [
+        {
+          "company": "Spacelab MX",
+          "role": "Frontend Developer",
+          "period": "2022 - 2025",
+          "description": "Development of real-time dashboards, drone visualization, interactive maps, and complex systems."
+        },
+        {
+          "company": "Showmac Entertainment",
+          "role": "Full Stack Developer",
+          "period": "2021 - 2022",
+          "description": "Development of full web applications with frontend and backend for interactive experiences."
+        }
+      ],
+      "skills": "Skills"
+    },
+    "projects": {
+      "title": "Projects",
+      "items": [
+        {
+          "name": "Drone Dashboard",
+          "description": "Real-time dashboard for drone monitoring and management with data visualization and interactive maps.",
+          "technologies": ["React", "TypeScript", "Redux", "WebSockets"]
+        },
+        {
+          "name": "3D Portfolio Experience",
+          "description": "Interactive portfolio with 3D models and custom shaders using React Three Fiber.",
+          "technologies": ["Three.js", "React Three Fiber", "GLSL", "Tailwind"]
+        },
+        {
+          "name": "E-commerce Platform",
+          "description": "Full web application with shopping cart, authentication, and product management.",
+          "technologies": ["Next.js", "Node.js", "MongoDB", "Stripe"]
+        }
+      ]
+    }
+  }
+}

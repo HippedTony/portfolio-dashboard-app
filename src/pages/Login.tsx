@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
-import { fakeLogin } from '../services/auth';
+import { fakeLogin } from '@/services/auth';
 import { useNavigate } from 'react-router';
-import { login } from '../store/slices/authSlice';
+import { login } from '@/store/slices/authSlice';
 
 function Login() {
   const dispatch = useDispatch();
