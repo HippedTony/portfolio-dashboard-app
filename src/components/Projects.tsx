@@ -25,7 +25,14 @@ function Projects() {
             key={i}
             className="group p-6 bg-gray-900 rounded-xl border border-gray-800 hover:border-blue-500 transition-all duration-300"
           >
-            <h3 className="text-xl font-semibold text-white group-hover:text-blue-400 transition">
+            <div className="relative w-full h-57.5">
+              <img
+                src={'https://picsum.photos/320/230'}
+                alt="project_image"
+                className="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-white mt-5 group-hover:text-blue-400 transition">
               {project.name}
             </h3>
 

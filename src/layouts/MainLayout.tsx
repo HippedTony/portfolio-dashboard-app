@@ -5,9 +5,7 @@ function MainLayout() {
   return (
     <div>
       <Navbar />
-      <div className="p-6">
-        <Outlet />
-      </div>
+      <Outlet />
     </div>
   );
 }

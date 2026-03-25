@@ -11,18 +11,19 @@ function Experience() {
 
       <color args={['#030202']} attach={'background'} />
 
-      <OrbitControls
-        makeDefault
-        enableDamping
-        enablePan={false}
-        minPolarAngle={Math.PI / 3}
-        maxPolarAngle={Math.PI / 2}
-        minAzimuthAngle={-Math.PI / 4}
-        maxAzimuthAngle={Math.PI / 4}
-        dampingFactor={0.05}
-      />
-
       <Suspense fallback={<PortalLoader />}>
+        <OrbitControls
+          makeDefault
+          enableDamping
+          enableZoom={false}
+          enablePan={false}
+          minPolarAngle={Math.PI / 3}
+          maxPolarAngle={Math.PI / 2}
+          minAzimuthAngle={-Math.PI / 4}
+          maxAzimuthAngle={Math.PI / 4}
+          dampingFactor={0.05}
+        />
+
         <Portal />
       </Suspense>
     </>
