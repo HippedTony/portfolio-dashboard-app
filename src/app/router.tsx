@@ -1,4 +1,4 @@
-import { createBrowserRouter, createHashRouter } from 'react-router';
+import { createHashRouter } from 'react-router';
 
 import MainLayout from '@/layouts/MainLayout';
 import Home from '@/pages/Home';
