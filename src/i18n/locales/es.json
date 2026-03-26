@@ -50,5 +50,28 @@
         }
       ]
     }
+  },
+  "dashboard": {
+    "login": {
+      "title": "Aplicación de monitoreo",
+      "error": "Credenciales inválidas",
+      "loginForm": {
+        "email": "Correo electrónico",
+        "emailPlaceholder": "nombre@mail.com",
+        "password": "Contraseña",
+        "passwordPlaceholder": "Ingresa tu contraseña",
+        "forgottenPassword": "¿Olvidaste tu contraseña?",
+        "loading": "Cargando...",
+        "login": "Iniciar sesión",
+        "loginToast": "Esta funcionalidad aún no se implementa."
+      }
+    }
+  },
+  "demoInformation": {
+    "infoTooltip": {
+      "demoCredentials": "Credenciales de prueba",
+      "email": "Correo electrónico",
+      "password": "Contraseña"
+    }
   }
 }

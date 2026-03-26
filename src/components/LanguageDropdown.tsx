@@ -40,7 +40,7 @@ function LanguageDropdown() {
       </button>
 
       {open && (
-        <div className="absolute right-0 mt-2 w-full bg-gray-900 border border-gray-700 rounded-lg shadow-lg animate-[fadeIn]">
+        <div className="absolute right-0 mt-2 w-full bg-gray-900 border border-gray-700 rounded-lg shadow-lg">
           <button
             className="w-full px-4 py-2 text-left text-white rounded-lg hover:bg-gray-800 transition"
             onClick={() => handleChange(otherLang)}

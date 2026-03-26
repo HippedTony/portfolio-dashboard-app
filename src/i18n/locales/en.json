@@ -50,5 +50,28 @@
         }
       ]
     }
+  },
+  "dashboard": {
+    "login": {
+      "title": "Monitoring Application",
+      "error": "Invalid credentials",
+      "loginForm": {
+        "email": "Email",
+        "emailPlaceholder": "name@mail.com",
+        "password": "Password",
+        "passwordPlaceholder": "Enter your password",
+        "forgottenPassword": "Forgot your password",
+        "loading": "Loading...",
+        "login": "Log in",
+        "loginToast": "This functionality is not yet supported"
+      }
+    }
+  },
+  "demoInformation": {
+    "infoTooltip": {
+      "demoCredentials": "Demo credentials",
+      "email": "Email",
+      "password": "Password"
+    }
   }
 }
