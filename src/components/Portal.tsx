@@ -4,12 +4,12 @@ import {
   useGLTF,
   useTexture,
   shaderMaterial,
-} from '@react-three/drei';
-import * as THREE from 'three';
-import portalVertexShader from '@/shaders/portal/vertex.glsl';
-import portalFragmentShader from '@/shaders/portal/fragment.glsl';
-import { extend, useFrame } from '@react-three/fiber';
-import { useRef } from 'react';
+} from "@react-three/drei";
+import * as THREE from "three";
+import portalVertexShader from "@/shaders/portal/vertex.glsl";
+import portalFragmentShader from "@/shaders/portal/fragment.glsl";
+import { extend, useFrame } from "@react-three/fiber";
+import React, { useRef } from "react";
 
 type GLTLResult = {
   nodes: {
@@ -24,23 +24,27 @@ type PortalMaterialType = THREE.ShaderMaterial & {
   uTime: number;
 };
 
+type PortalProps = {
+  isMobile: boolean;
+};
+
 const PortalMaterial = shaderMaterial(
   {
     uTime: 0,
-    uColorStart: new THREE.Color('#ffffff'),
-    uColorEnd: new THREE.Color('#000000'),
+    uColorStart: new THREE.Color("#ffffff"),
+    uColorEnd: new THREE.Color("#000000"),
   },
   portalVertexShader,
   portalFragmentShader,
 );
 extend({ PortalMaterial });
 
-function Portal() {
+function Portal({ isMobile }: PortalProps) {
   const portalMaterial = useRef<PortalMaterialType | null>(null);
 
-  const { nodes } = useGLTF('./model/portal.glb') as unknown as GLTLResult;
+  const { nodes } = useGLTF("./model/portal.glb") as unknown as GLTLResult;
 
-  const bakedTexture = useTexture('./model/baked.jpg');
+  const bakedTexture = useTexture("./model/baked.jpg");
   bakedTexture.flipY = false;
 
   useFrame((_state, delta) => {
@@ -48,7 +52,10 @@ function Portal() {
   });
 
   return (
-    <Center>
+    <Center
+      scale={isMobile ? 0.6 : 1}
+      position={isMobile ? [0, -0.5, 0] : [0, 0, 0]}
+    >
       <mesh geometry={nodes.baked.geometry}>
         <meshBasicMaterial map={bakedTexture} />
       </mesh>
@@ -57,14 +64,14 @@ function Portal() {
         geometry={nodes.poleLightA.geometry}
         position={nodes.poleLightA.position}
       >
-        <meshBasicMaterial color={'#ffffe5'} />
+        <meshBasicMaterial color={"#ffffe5"} />
       </mesh>
 
       <mesh
         geometry={nodes.poleLightB.geometry}
         position={nodes.poleLightB.position}
       >
-        <meshBasicMaterial color={'#ffffe5'} />
+        <meshBasicMaterial color={"#ffffe5"} />
       </mesh>
 
       <mesh
@@ -86,4 +93,7 @@ function Portal() {
   );
 }
 
-export default Portal;
+export default React.memo(Portal);
+
+useGLTF.preload("./model/portal.glb");
+useTexture.preload("./model/baked.jpg");

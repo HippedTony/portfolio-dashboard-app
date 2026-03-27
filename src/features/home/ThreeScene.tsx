@@ -1,5 +1,7 @@
-import { Canvas } from '@react-three/fiber';
-import Experience from '@/features/home/Experience';
+import { Canvas } from "@react-three/fiber";
+import Experience from "@/features/home/Experience";
+import { Suspense } from "react";
+import PortalLoader from "@/components/PortalLoader";
 
 function ThreeScene() {
   return (
@@ -12,7 +14,9 @@ function ThreeScene() {
         position: [1, 2, 6],
       }}
     >
-      <Experience />
+      <Suspense fallback={<PortalLoader />}>
+        <Experience />
+      </Suspense>
     </Canvas>
   );
 }
