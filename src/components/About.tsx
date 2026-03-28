@@ -2,12 +2,15 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import ExperienceCard from "./ExperienceCard";
 import SkillsCard from "./SkillsCard";
+import { VerticalTimeline } from "react-vertical-timeline-component";
+
+import "react-vertical-timeline-component/style.min.css";
 
 type ExperienceItem = {
   company: string;
   role: string;
   period: string;
-  description: string;
+  description: string[];
 };
 
 function About() {
@@ -33,27 +36,29 @@ function About() {
         {t("portfolio.about.description")}
       </p>
 
-      <div className="grid gap-10 md:grid-cols-2">
+      <div className="">
         <div>
-          <h3 className="mb-4 text-xl font-semibold text-blue-400">
+          <h3 className="flex justify-center text-6xl font-semibold text-blue-400">
             {t("portfolio.about.experience")}
           </h3>
 
-          <div className="space-y-4">
-            {professionalExperience.map((exp, i) => (
-              <ExperienceCard
-                key={i}
-                exp={exp}
-                isTouchDevice={isTouchDevice}
-                isActive={activeIndex === i}
-                onClick={() => handleClick(i)}
-              />
-            ))}
+          <div className="mt-20 space-y-4">
+            <VerticalTimeline>
+              {professionalExperience.map((exp, i) => (
+                <ExperienceCard
+                  key={i}
+                  exp={exp}
+                  isTouchDevice={isTouchDevice}
+                  isActive={activeIndex === i}
+                  onClick={() => handleClick(i)}
+                />
+              ))}
+            </VerticalTimeline>
           </div>
         </div>
 
         <div>
-          <h3 className="mb-4 text-xl font-semibold text-purple-400">
+          <h3 className="flex justify-center my-10 text-6xl font-semibold text-purple-400">
             {t("portfolio.about.skills")}
           </h3>
 

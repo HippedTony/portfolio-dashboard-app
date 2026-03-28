@@ -1,9 +1,11 @@
+import { VerticalTimelineElement } from "react-vertical-timeline-component";
+
 interface ExperienceCardProps {
   exp: {
     company: string;
     role: string;
     period: string;
-    description: string;
+    description: string[];
   };
   isTouchDevice: boolean;
   isActive: boolean;
@@ -17,22 +19,44 @@ function ExperienceCard({
   onClick,
 }: ExperienceCardProps) {
   return (
-    <div
-      onClick={onClick}
-      className={`rounded-lg border bg-gray-900 p-4 transition ${
-        isTouchDevice
-          ? isActive
-            ? "border-blue-500"
-            : "border-gray-800"
-          : "border-gray-800 hover:border-blue-500"
-      }`}
+    <VerticalTimelineElement
+      contentStyle={{
+        background: "#101828",
+        padding: "0",
+        border: "none",
+      }}
+      contentArrowStyle={{
+        borderRight: "7px solid #232631",
+      }}
+      date={exp.period}
+      iconStyle={{ background: "#161329" }}
+      icon={
+        <div className="flex h-full w-full items-center justify-center">
+          <img src="./favicon.svg" className="h-[60%] w-[60%] object-contain" />
+        </div>
+      }
     >
-      <p className="font-medium text-white">{exp.role}</p>
-      <p className="mt-2 text-sm text-gray-300">
-        {exp.company} * {exp.period}
-      </p>
-      <p className="mt-2 text-sm text-gray-300">{exp.description}</p>
-    </div>
+      <div
+        onClick={onClick}
+        className={`rounded-lg border bg-gray-900 px-4 pt-2 pb-6 transition ${
+          isTouchDevice
+            ? isActive
+              ? "border-blue-500"
+              : "border-gray-800"
+            : "border-gray-800 hover:border-blue-500"
+        }`}
+      >
+        <p>{exp.role}</p>
+        <p className="text-gray-300">{exp.company}</p>
+        <ul>
+          {exp.description.map((des, i) => (
+            <li key={i} className="ms-5 mt-2 list-disc text-sm text-gray-300">
+              {des}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </VerticalTimelineElement>
   );
 }
 

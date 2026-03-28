@@ -16,16 +16,32 @@
       "experience": "Experience",
       "professionalExperience": [
         {
+          "company": "Freelance",
+          "role": "Fullstack Developer",
+          "period": "2026 - current",
+          "description": [
+            "Build and customized e-commerce platforms using WordPress and WooCommerce, including product managemenr, payment integration and responsive UI design. Managed deployment and hosting using Hostinger.",
+            "Developed a personal portfolio and content management system using React, TypeScript, TailwindCSS and Three.js, enabling dynamic project updates and modular content handling. Deployed using GitHub Pages."
+          ]
+        },
+        {
           "company": "Spacelab MX",
           "role": "Frontend Developer",
           "period": "2022 - 2025",
-          "description": "Development of real-time dashboards, drone visualization, interactive maps, and complex systems."
+          "description": [
+            "Developed and maintained web apps using React and Next.js. Implemented gloal state management solutions useing React COntext and Redux Toolkit.",
+            "Worked on real-time frone and location management systems featuring maps, multimedia content, and reporting tools.Created dashboards and configurations views for mission-critical systems.",
+            "Collaborated with backend, design and product teams in agile environments."
+          ]
         },
         {
           "company": "Showmac Entertainment",
           "role": "Full Stack Developer",
           "period": "2021 - 2022",
-          "description": "Development of full web applications with frontend and backend for interactive experiences."
+          "description": [
+            "Designed and developed responsive web and mobile apps using Angular and Flutter. Integrated frontend interfaces with backend services and cloud platforms.",
+            "Built cross-platform interfaces optimized for performance and usability. Managed deployment and hosting using Github Pages and HostGatos."
+          ]
         }
       ],
       "skills": "Skills"
@@ -36,17 +52,17 @@
         {
           "name": "Drone Dashboard",
           "description": "Real-time dashboard for drone monitoring and management with data visualization and interactive maps.",
-          "technologies": ["React", "TypeScript", "Redux", "WebSockets"]
+          "technologies": ["React", "JavaScript", "Redux", "Node.js", "Tailwind"]
         },
         {
           "name": "3D Portfolio Experience",
           "description": "Interactive portfolio with 3D models and custom shaders using React Three Fiber.",
-          "technologies": ["Three.js", "React Three Fiber", "GLSL", "Tailwind"]
+          "technologies": ["React", "Three.js", "React Three Fiber", "GLSL", "Tailwind", "TypeScript"]
         },
         {
           "name": "E-commerce Platform",
           "description": "Full web application with shopping cart, authentication, and product management.",
-          "technologies": ["Next.js", "Node.js", "MongoDB", "Stripe"]
+          "technologies": ["WordPress", "WooCommerce", "Hostinger"]
         }
       ]
     }

@@ -16,16 +16,32 @@
       "experience": "Experiencia",
       "professionalExperience": [
         {
+          "company": "Freelance",
+          "role": "Fullstack Developer",
+          "period": "2026 - current",
+          "description": [
+            "Desarrollo y personalización de plataforma de comercio electrónico utilizando WordPress y WooCommerce, incluyendo gestión de productos, integración de pagos y diseño de interfaces responsivas. Despliegue y hosting con Hostinger",
+            "Diseño y desarrollo contínuo de un pertafolio personal y un sistema de gestión de contenido utilizando React, TypeScript, TailwindCSS y Three.js, permitioendo la actualización dinámica de proyectos y manejo modular de contenido. Desplegaod usando GitHub Pages."
+          ]
+        },
+        {
           "company": "Spacelab MX",
-          "role": "Desarrollador Frontend",
+          "role": "Frontend Developer",
           "period": "2022 - 2025",
-          "description": "Desarrollo de dashboards en tiempo real, visualización de drones, mapas interactivos y sistemas complejos."
+          "description": [
+            "Desarrollo y mantenimiento de aplicaciones web utilizando React y Next.js. Implementé soluciones de manejo de estado global usando React Context y Redux Toolkit.",
+            "Desarrollo de sistemas en tiempo real para gestión de drones y localización, integrando mapas, contenido multimedia y herramientas de reporte. Creación de dashboards y vistas de configuración para sistemas críticos.",
+            "Colaboración con equipos de backend, diseño y producto en entornos ágiles."
+          ]
         },
         {
           "company": "Showmac Entertainment",
-          "role": "Desarrollador Full Stack",
+          "role": "Full Stack Developer",
           "period": "2021 - 2022",
-          "description": "Desarrollo de aplicaciones web completas con frontend y backend para experiencias interactivas."
+          "description": [
+            "Diseño y desarrollo de aplicaciones web y móviles responsivas utilizando Angular y Flutter. Integración de interfaces frontend con servicios backend y plataformas en la nube.",
+            "Desarrollo de interfaces multiplataforma optimizadas para rendimiento y usabilidad. Despliegue y hosting utilizando GitHub Pages y HostGator."
+          ]
         }
       ],
       "skills": "Habilidades"
