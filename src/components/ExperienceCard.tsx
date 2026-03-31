@@ -1,8 +1,8 @@
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
-import showmacImg from '@/assets/showmac.jpg'
-import spacelabImg from '@/assets/spacelab.png'
-import freelanceImg from '@/assets/freelance.png'
+import showmacImg from '@/assets/images/showmac.jpg'
+import spacelabImg from '@/assets/images/spacelab.png'
+import freelanceImg from '@/assets/images/freelance.png'
 
 const imagesMap: Record<string, string> = {
   showmac: showmacImg,

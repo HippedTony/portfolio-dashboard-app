@@ -1,12 +1,13 @@
-import { useDispatch } from 'react-redux';
-import { fakeLogin } from '@/services/auth.service';
-import { useNavigate } from 'react-router';
-import { login } from '@/store/slices/authSlice';
-import type { AppDispatch } from '@/store/store';
-import { useState } from 'react';
-import InfoTooltip from '@/components/InfoTooltip';
-import LoginForm from '@/components/LoginForm';
-import { useTranslation } from 'react-i18next';
+import { useDispatch } from "react-redux";
+import { fakeLogin } from "@/services/auth.service";
+import { useNavigate } from "react-router";
+import { login } from "@/store/slices/authSlice";
+import type { AppDispatch } from "@/store/store";
+import { useState } from "react";
+import InfoTooltip from "@/components/dashboard/InfoTooltip";
+import LoginForm from "@/components/dashboard/LoginForm";
+import { useTranslation } from "react-i18next";
+import BackgroundAnimated from "@/components/dashboard/BackgroundAnimated";
 
 function Login() {
   const { t } = useTranslation();
@@ -34,54 +35,62 @@ function Login() {
       );
 
       switch (status) {
-        case 'ACTIVE':
-          navigate('/dashboard');
+        case "ACTIVE":
+          navigate("/dashboard");
           break;
 
-        case 'CHANGE_PASSWORD':
-          navigate('/change-password', {
+        case "CHANGE_PASSWORD":
+          navigate("/change-password", {
             state: { user: user_information },
           });
           break;
 
         default:
-          navigate('/');
+          navigate("/");
       }
     } catch (error: any) {
-      setError(error.code || 'Login error');
+      setError(error.code || "Login error");
       setLoading(false);
     }
   };
 
   return (
     <>
-      <div className="w-87.5 h-auto absolute top-1/2 left-1/2 -translate-1/2 z-50 text-center px-5 py-6 rounded-2xl bg-[#1b1a1ee6] shadow-(--custom-box-shadow)">
-        <InfoTooltip
-          content={
-            <div>
-              <p className="font-semibold mb-1">{t('demoInformation.infoTooltip.demoCredentials')}</p>
-              <p>
-                {t('demoInformation.infoTooltip.email')}: <span className="text-indigo-400">tony@pan.com</span>
-              </p>
-              <p>
-                {t('demoInformation.infoTooltip.password')}: <span className="text-indigo-400">admin123</span>
-              </p>
-            </div>
-          }
-        />
+      <BackgroundAnimated
+        component={
+          <div className="bg-dashboard shadow-login absolute top-1/2 left-1/2 z-50 h-auto w-72 -translate-1/2 rounded-2xl px-5 py-6 text-center xxs:w-87.5">
+            <InfoTooltip
+              content={
+                <div>
+                  <p className="mb-1 font-semibold">
+                    {t("demoInformation.infoTooltip.demoCredentials")}
+                  </p>
+                  <p>
+                    {t("demoInformation.infoTooltip.email")}:{" "}
+                    <span className="text-indigo-400">tony@pan.com</span>
+                  </p>
+                  <p>
+                    {t("demoInformation.infoTooltip.password")}:{" "}
+                    <span className="text-indigo-400">admin123</span>
+                  </p>
+                </div>
+              }
+            />
 
-        <h1 className="text-white text-2xl leading-5 mb-7.5">
-          {t('dashboard.login.title')}
-        </h1>
+            <h1 className="mb-7.5 text-2xl leading-5 text-white">
+              {t("dashboard.login.title")}
+            </h1>
 
-        {error === 404 ? (
-          <h2 className="text-red-500 text-base -mt-4 mb-2 text-center">
-            {t('dashboard.login.error')}
-          </h2>
-        ) : null}
+            {error === 404 ? (
+              <h2 className="-mt-4 mb-2 text-center text-base text-red-500">
+                {t("dashboard.login.error")}
+              </h2>
+            ) : null}
 
-        <LoginForm onSubmit={handleLogin} loading={loading} />
-      </div>
+            <LoginForm onSubmit={handleLogin} loading={loading} />
+          </div>
+        }
+      />
     </>
   );
 }
