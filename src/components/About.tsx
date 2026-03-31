@@ -10,6 +10,7 @@ type ExperienceItem = {
   company: string;
   role: string;
   period: string;
+  icon: string;
   description: string[];
 };
 

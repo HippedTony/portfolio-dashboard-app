@@ -4,6 +4,7 @@ import { useState } from "react";
 
 type Projects = {
   name: string;
+  image: string;
   description: string;
   technologies: string[];
 };
