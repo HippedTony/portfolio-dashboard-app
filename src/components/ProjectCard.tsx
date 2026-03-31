@@ -1,6 +1,7 @@
 interface ProjectCardProps {
   project: {
     name: string;
+    image: string;
     description: string;
     technologies: string[];
   };
@@ -26,11 +27,11 @@ function ProjectCard({
       }`}
       onClick={onClick}
     >
-      <div className="relative h-57.5 w-full">
+      <div className="relative h-50 w-full ">
         <img
-          src={"https://picsum.photos/320/230"}
+          src={project.image}
           alt="project_image"
-          className="h-full w-full rounded-2xl object-cover"
+          className="h-full w-full rounded-4xl object-cover"
         />
       </div>
       <h3

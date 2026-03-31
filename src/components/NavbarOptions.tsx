@@ -1,6 +1,6 @@
 import { NavLink } from "react-router";
 import { useTranslation } from "react-i18next";
-import LanguageDropdown from "./LanguageDropdown";
+import LanguageToggle from "./LanguageToggle";
 
 interface NavbarOptionsProps {
   isAuthenticated: boolean;
@@ -37,7 +37,7 @@ function NavbarOptions({
         Resume
       </button>
 
-      <LanguageDropdown />
+      <LanguageToggle />
     </>
   );
 }

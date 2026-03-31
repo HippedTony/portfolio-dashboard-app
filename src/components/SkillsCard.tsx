@@ -1,17 +1,25 @@
 import { useState } from "react";
 
 const skills = {
-  frontend: [
+  core: [
     "React",
-    "Angular",
     "Next.js",
-    "TypeScript",
-    "Tailwind",
-    "Bootstrap",
+    "Node.js",
+    "JavaScript/TypeScript",
+    "React Three Fiber",
   ],
-  state: ["Redux Toolkit", "Context API"],
-  three: ["Three.js", "React Three Fiber", "Shaders"],
-  backend: ["Node.js", "Express"],
+  technologies: [
+    "Angular",
+    "NestJS",
+    "MongoDB",
+    "SQL",
+    "Firebase",
+    "Redux Toolkit",
+    "React Query",
+    "React Native",
+  ],
+  tools: ["GitHub", "Vite", "WordPress"],
+  extras: ["Three.js", "Flutter", "Python", "Java", "C#", "React Native"],
 };
 
 function SkillsCard() {
@@ -20,10 +28,10 @@ function SkillsCard() {
 
   return (
     <div
-      className={`rounded-lg border bg-black p-4 font-mono text-sm text-green-400 transition ${
+      className={`mx-auto flex w-11/12 flex-col rounded-lg border bg-black p-4 font-mono text-sm text-green-400 transition md:w-2/3 md:p-10 lg:w-1/2 ${
         isActive
-          ? "border-purple-500"
-          : "border-gray-80 hover:border-purple-500"
+          ? "scale-[1.1] border-purple-500"
+          : "border-gray-80 hover:scale-[1.1] hover:border-purple-500"
       }`}
       onClick={() => {
         if (isTouchDevice) {
