@@ -19,7 +19,7 @@ const skills = {
     "React Native",
   ],
   tools: ["GitHub", "Vite", "WordPress"],
-  extras: ["Three.js", "Flutter", "Python", "Java", "C#", "C++"],
+  extras: ["Three.js", "Flutter", "Python", "Java", "C#", "React Native"],
 };
 
 function SkillsCard() {
@@ -28,10 +28,10 @@ function SkillsCard() {
 
   return (
     <div
-      className={`flex flex-col w-1/2 mx-auto rounded-lg border bg-black p-10 font-mono text-sm text-green-400 transition ${
+      className={`mx-auto flex w-11/12 flex-col rounded-lg border bg-black p-4 font-mono text-sm text-green-400 transition md:w-2/3 md:p-10 lg:w-1/2 ${
         isActive
-          ? "border-purple-500 scale-[1.1]"
-          : "border-gray-80 hover:border-purple-500 hover:scale-[1.1]"
+          ? "scale-[1.1] border-purple-500"
+          : "border-gray-80 hover:scale-[1.1] hover:border-purple-500"
       }`}
       onClick={() => {
         if (isTouchDevice) {

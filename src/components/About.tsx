@@ -38,7 +38,7 @@ function About() {
 
       <div className="">
         <div>
-          <h3 className="flex justify-center text-6xl font-semibold text-blue-400">
+          <h3 className="flex justify-center text-5xl font-semibold text-blue-400 md:text-6xl">
             {t("portfolio.about.experience")}
           </h3>
 
@@ -58,7 +58,7 @@ function About() {
         </div>
 
         <div>
-          <h3 className="flex justify-center my-10 text-6xl font-semibold text-purple-400">
+          <h3 className="my-10 flex justify-center text-6xl font-semibold text-purple-400">
             {t("portfolio.about.skills")}
           </h3>
 

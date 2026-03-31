@@ -5,6 +5,7 @@ interface ExperienceCardProps {
     company: string;
     role: string;
     period: string;
+    icon: string;
     description: string[];
   };
   isTouchDevice: boolean;
@@ -32,13 +33,15 @@ function ExperienceCard({
       iconStyle={{ background: "#161329" }}
       icon={
         <div className="flex h-full w-full items-center justify-center">
-          <img src="./favicon.svg" className="h-[60%] w-[60%] object-contain" />
+          <img src={exp.icon} className="h-[80%] w-[80%] object-contain rounded-full" />
         </div>
       }
+      dateClassName="ms-4 w-[-webkit-fill-available] xl:ms-0"
+      iconClassName="transition hover:scale-110"
     >
       <div
         onClick={onClick}
-        className={`rounded-lg border bg-gray-900 px-4 pt-2 pb-6 transition ${
+        className={`rounded-t-lg border-t bg-gray-900 px-4 pt-2 pb-6 transition xl:rounded-lg xl:border-b ${
           isTouchDevice
             ? isActive
               ? "border-blue-500"

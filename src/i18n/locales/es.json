@@ -19,6 +19,7 @@
           "company": "Freelance",
           "role": "Fullstack Developer",
           "period": "2026 - current",
+          "icon": "freelance.png",
           "description": [
             "Desarrollo y personalización de plataforma de comercio electrónico utilizando WordPress y WooCommerce, incluyendo gestión de productos, integración de pagos y diseño de interfaces responsivas. Despliegue y hosting con Hostinger",
             "Diseño y desarrollo contínuo de un pertafolio personal y un sistema de gestión de contenido utilizando React, TypeScript, TailwindCSS y Three.js, permitioendo la actualización dinámica de proyectos y manejo modular de contenido. Desplegaod usando GitHub Pages."
@@ -28,6 +29,7 @@
           "company": "Spacelab MX",
           "role": "Frontend Developer",
           "period": "2022 - 2025",
+          "icon": "spacelab.png",
           "description": [
             "Desarrollo y mantenimiento de aplicaciones web utilizando React y Next.js. Implementé soluciones de manejo de estado global usando React Context y Redux Toolkit.",
             "Desarrollo de sistemas en tiempo real para gestión de drones y localización, integrando mapas, contenido multimedia y herramientas de reporte. Creación de dashboards y vistas de configuración para sistemas críticos.",
@@ -38,6 +40,7 @@
           "company": "Showmac Entertainment",
           "role": "Full Stack Developer",
           "period": "2021 - 2022",
+          "icon": "showmac.jpg",
           "description": [
             "Diseño y desarrollo de aplicaciones web y móviles responsivas utilizando Angular y Flutter. Integración de interfaces frontend con servicios backend y plataformas en la nube.",
             "Desarrollo de interfaces multiplataforma optimizadas para rendimiento y usabilidad. Despliegue y hosting utilizando GitHub Pages y HostGator."
@@ -51,16 +54,19 @@
       "items": [
         {
           "name": "Drone Dashboard",
+          "image": "drone_dashboard.png",
           "description": "Dashboard en tiempo real para monitoreo y gestión de drones con visualización de datos y mapas interactivos.",
           "technologies": ["React", "TypeScript", "Redux", "WebSockets"]
         },
         {
           "name": "3D Portfolio Experience",
+          "image": "portfolio.png",
           "description": "Portafolio interactivo con modelos 3D y shaders personalizados usando React Three Fiber.",
           "technologies": ["Three.js", "React Three Fiber", "GLSL", "Tailwind"]
         },
         {
           "name": "E-commerce Platform",
+          "image": "nutrimarket.png",
           "description": "Aplicación web completa con carrito de compras, autenticación y gestión de productos.",
           "technologies": ["Next.js", "Node.js", "MongoDB", "Stripe"]
         }
