@@ -1,5 +1,15 @@
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
+import showmacImg from '@/assets/showmac.jpg'
+import spacelabImg from '@/assets/spacelab.png'
+import freelanceImg from '@/assets/freelance.png'
+
+const imagesMap: Record<string, string> = {
+  showmac: showmacImg,
+  spacelab: spacelabImg,
+  freelance: freelanceImg
+}
+
 interface ExperienceCardProps {
   exp: {
     company: string;
@@ -33,7 +43,7 @@ function ExperienceCard({
       iconStyle={{ background: "#161329" }}
       icon={
         <div className="flex h-full w-full items-center justify-center">
-          <img src={exp.icon} className="h-[80%] w-[80%] object-contain rounded-full" />
+          <img src={imagesMap[exp.icon]} className="h-[80%] w-[80%] object-contain rounded-full" />
         </div>
       }
       dateClassName="ms-4 w-[-webkit-fill-available] xl:ms-0"

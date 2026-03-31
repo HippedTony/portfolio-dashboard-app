@@ -1,6 +1,9 @@
 import i18n from "@/i18n";
 import { useEffect, useState } from "react";
 
+import usImage from '@/assets/us.jpg'
+import mxImage from '@/assets/mx.jpg'
+
 function LanguageToggle() {
   const [lang, setLang] = useState<"es" | "en">(
     i18n.language.startsWith("es") ? "es" : "en",
@@ -28,10 +31,10 @@ function LanguageToggle() {
       <div
         className="absolute top-0.5 left-1 flex h-4 w-4 rounded-full bg-gray-100 shadow-[0_0_12px_rgba(59,130,246,0.6)] transition-all duration-300"
         style={{
-          transform: `translateX(${isEnglish ? "130%" : "0%"})`,
+          transform: `translateX(${isEnglish ? "125%" : "0%"})`,
         }}
       >
-        <img src={isEnglish ? "us.jpg" : "mx.jpg"} className="rounded-full" />
+        <img src={isEnglish ? usImage : mxImage} className="rounded-full" />
       </div>
 
       {/* Labels (background) */}

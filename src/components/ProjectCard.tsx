@@ -1,3 +1,13 @@
+import droneDashboardImg from "@/assets/drone_dashboard.png";
+import portfolioImg from "@/assets/portfolio.png";
+import nutrimarketImg from "@/assets/nutrimarket.png";
+
+const imagesMap: Record<string, string> = {
+  drone_dashboard: droneDashboardImg,
+  portfolio: portfolioImg,
+  nutrimarket: nutrimarketImg,
+};
+
 interface ProjectCardProps {
   project: {
     name: string;
@@ -27,9 +37,9 @@ function ProjectCard({
       }`}
       onClick={onClick}
     >
-      <div className="relative h-50 w-full ">
+      <div className="relative h-50 w-full">
         <img
-          src={project.image}
+          src={imagesMap[project.image]}
           alt="project_image"
           className="h-full w-full rounded-4xl object-cover"
         />

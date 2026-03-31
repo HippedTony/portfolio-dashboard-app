@@ -19,7 +19,7 @@
           "company": "Freelance",
           "role": "Fullstack Developer",
           "period": "2026 - current",
-          "icon": "freelance.png",
+          "icon": "freelance",
           "description": [
             "Build and customized e-commerce platforms using WordPress and WooCommerce, including product managemenr, payment integration and responsive UI design. Managed deployment and hosting using Hostinger.",
             "Developed a personal portfolio and content management system using React, TypeScript, TailwindCSS and Three.js, enabling dynamic project updates and modular content handling. Deployed using GitHub Pages."
@@ -29,7 +29,7 @@
           "company": "Spacelab MX",
           "role": "Frontend Developer",
           "period": "2022 - 2025",
-          "icon": "spacelab.png",
+          "icon": "spacelab",
           "description": [
             "Developed and maintained web apps using React and Next.js. Implemented gloal state management solutions useing React Context and Redux Toolkit.",
             "Worked on real-time frone and location management systems featuring maps, multimedia content, and reporting tools.Created dashboards and configurations views for mission-critical systems.",
@@ -40,7 +40,7 @@
           "company": "Showmac Entertainment",
           "role": "Full Stack Developer",
           "period": "2021 - 2022",
-          "icon": "showmac.jpg",
+          "icon": "showmac",
           "description": [
             "Designed and developed responsive web and mobile apps using Angular and Flutter. Integrated frontend interfaces with backend services and cloud platforms.",
             "Built cross-platform interfaces optimized for performance and usability. Managed deployment and hosting using Github Pages and HostGatos."
@@ -54,19 +54,19 @@
       "items": [
         {
           "name": "Drone Dashboard",
-          "image": "drone_dashboard.png",
+          "image": "drone_dashboard",
           "description": "Real-time dashboard for drone monitoring and management with data visualization and interactive maps.",
           "technologies": ["React", "JavaScript", "Redux", "Node.js", "Tailwind"]
         },
         {
           "name": "3D Portfolio Experience",
-          "image": "portfolio.png",
+          "image": "portfolio",
           "description": "Interactive portfolio with 3D models and custom shaders using React Three Fiber.",
           "technologies": ["React", "Three.js", "React Three Fiber", "GLSL", "Tailwind", "TypeScript"]
         },
         {
           "name": "E-commerce Platform",
-          "image": "nutrimarket.png",
+          "image": "nutrimarket",
           "description": "Full web application with shopping cart, authentication, and product management.",
           "technologies": ["WordPress", "WooCommerce", "Hostinger"]
         }
