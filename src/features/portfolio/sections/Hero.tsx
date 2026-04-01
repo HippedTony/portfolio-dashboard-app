@@ -1,4 +1,4 @@
-import ThreeScene from "@/features/home/ThreeScene";
+import ThreeScene from "@/features/portfolio/threeScene/ThreeScene";
 import { useTranslation } from "react-i18next";
 
 function Hero() {

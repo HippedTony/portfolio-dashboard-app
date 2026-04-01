@@ -1,5 +1,5 @@
 import { OrbitControls } from "@react-three/drei";
-import Portal from "@/components/Portal";
+import Portal from "@/features/portfolio/threeScene/Portal";
 import { Perf } from "r3f-perf";
 import { useEffect, useState } from "react";
 

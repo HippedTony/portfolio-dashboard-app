@@ -1,8 +1,8 @@
 import i18n from "@/i18n";
 import { useEffect, useState } from "react";
 
-import usImage from '@/assets/us.jpg'
-import mxImage from '@/assets/mx.jpg'
+import usImage from '@/assets/images/us.jpg'
+import mxImage from '@/assets/images/mx.jpg'
 
 function LanguageToggle() {
   const [lang, setLang] = useState<"es" | "en">(

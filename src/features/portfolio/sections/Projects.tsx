@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "@/features/portfolio/components/ProjectCard";
 import { useState } from "react";
 
 type Projects = {

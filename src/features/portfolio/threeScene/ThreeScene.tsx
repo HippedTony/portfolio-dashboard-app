@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber";
-import Experience from "@/features/home/Experience";
+import Experience from "@/features/portfolio/threeScene/Experience";
 import { Suspense } from "react";
-import PortalLoader from "@/components/PortalLoader";
+import PortalLoader from "@/features/portfolio/components/PortalLoader";
 
 function ThreeScene() {
   return (

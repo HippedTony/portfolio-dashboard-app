@@ -1,14 +1,21 @@
-import { createHashRouter } from 'react-router';
+import { createBrowserRouter } from "react-router";
 
-import MainLayout from '@/layouts/MainLayout';
-import Home from '@/pages/Home';
-import Dashboard from '@/pages/Dashboard';
-import Login from '@/pages/Login';
-import ProtectedRoute from '@/app/ProtectedRoute';
+// layouts
+import MainLayout from "@/layouts/MainLayout";
 
-export const router = createHashRouter([
+// pages
+import Home from "@/pages/Home";
+import Dashboard from "@/pages/Dashboard";
+import Login from "@/pages/Login";
+
+// auth
+import ProtectedRoute from "@/app/ProtectedRoute";
+import AppLayout from "@/layouts/AppLayout";
+import Calendar from "@/pages/Calendar";
+
+export const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <MainLayout />,
     children: [
       {
@@ -16,16 +23,25 @@ export const router = createHashRouter([
         element: <Home />,
       },
       {
-        path: 'login',
+        path: "/login",
         element: <Login />,
       },
+    ],
+  },
+  {
+    element: (
+      <ProtectedRoute>
+        <AppLayout />
+      </ProtectedRoute>
+    ),
+    children: [
       {
-        path: 'dashboard',
-        element: (
-          <ProtectedRoute>
-            <Dashboard />
-          </ProtectedRoute>
-        ),
+        path: "/dashboard",
+        element: <Dashboard />,
+      },
+      {
+        path: "/calendar",
+        element: <Calendar />,
       },
     ],
   },

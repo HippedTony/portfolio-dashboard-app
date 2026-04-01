@@ -1,7 +1,7 @@
 import toast, { Toaster } from "react-hot-toast";
-import About from "@/components/About";
-import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
+import About from "@/features/portfolio/sections/About";
+import Hero from "@/features/portfolio/sections/Hero";
+import Projects from "@/features/portfolio/sections/Projects";
 import { useEffect, useRef } from "react";
 
 function Home() {

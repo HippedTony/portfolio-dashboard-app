@@ -6,8 +6,8 @@ import {
   shaderMaterial,
 } from "@react-three/drei";
 import * as THREE from "three";
-import portalVertexShader from "@/shaders/portal/vertex.glsl";
-import portalFragmentShader from "@/shaders/portal/fragment.glsl";
+import portalVertexShader from "@/features/portfolio/shaders/portal/vertex.glsl";
+import portalFragmentShader from "@/features/portfolio/shaders/portal/fragment.glsl";
 import { extend, useFrame } from "@react-three/fiber";
 import React, { useRef } from "react";
 

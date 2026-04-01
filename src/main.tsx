@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { RouterProvider } from 'react-router';
 import { router } from '@/app/router';
 import { Provider } from 'react-redux';
-import { store } from '@/store/store';
+import { store } from '@/app/store';
 import '@/index.css';
 import '@/i18n';
 

@@ -1,9 +1,11 @@
-import { Outlet } from "react-router";
+import AppNavbar from "@/shared/components/navigation/AppNavbar";
 import PortfolioNavbar from "@/shared/components/navigation/PortfolioNavbar";
+import { Outlet } from "react-router";
 
-function MainLayout() {
+function AppLayout() {
   return (
     <>
+      <AppNavbar />
       <PortfolioNavbar />
       <main>
         <Outlet />
@@ -12,4 +14,4 @@ function MainLayout() {
   );
 }
 
-export default MainLayout;
+export default AppLayout;

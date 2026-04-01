@@ -1,6 +1,6 @@
-import droneDashboardImg from "@/assets/drone_dashboard.png";
-import portfolioImg from "@/assets/portfolio.png";
-import nutrimarketImg from "@/assets/nutrimarket.png";
+import droneDashboardImg from "@/assets/images/drone_dashboard.png";
+import portfolioImg from "@/assets/images/portfolio.png";
+import nutrimarketImg from "@/assets/images/nutrimarket.png";
 
 const imagesMap: Record<string, string> = {
   drone_dashboard: droneDashboardImg,
