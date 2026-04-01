@@ -1,4 +1,4 @@
-import { type LoginResponse } from '@/types/auth.types';
+import { type LoginResponse } from "@/shared/types/auth.types";
 
 export const fakeLogin = async (
   user_name: string,
@@ -6,7 +6,7 @@ export const fakeLogin = async (
 ): Promise<LoginResponse> => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (user_name !== 'tony@pan.com' || password !== 'admin123') {
+      if (user_name !== "tony@pan.com" || password !== "admin123") {
         reject({ code: 404 });
         return;
       }
@@ -14,15 +14,15 @@ export const fakeLogin = async (
       resolve({
         data: {
           user_information: {
-            name: 'Tony',
-            role: 'admin',
+            name: "Tony",
+            role: "admin",
             redirect_to: {
-              app: 'dashboard',
-              name: 'home',
+              app: "dashboard",
+              name: "home",
             },
           },
-          status: 'ACTIVE',
-          token: 'fake-token',
+          status: "ACTIVE",
+          token: "fake-token",
         },
       });
     }, 500);

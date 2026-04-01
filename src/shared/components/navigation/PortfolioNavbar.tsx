@@ -1,14 +1,15 @@
 import { useDispatch, useSelector } from "react-redux";
-import type { RootState } from "@/store/store";
+import type { RootState } from "@/app/store";
 import { NavLink, useNavigate } from "react-router";
-import { logout } from "@/store/slices/authSlice";
+import { logout } from "@/features/auth/authSlice";
 import { useTranslation } from "react-i18next";
 import { useEffect, useRef, useState } from "react";
-import NavbarOptions from "@/components/NavbarOptions";
+import NavbarOptions from "@/shared/components/navigation/components/NavbarOptions";
 
 import { IoMenu, IoCloseSharp } from "react-icons/io5";
+import { clearAuth } from "@/shared/utils/authStorage";
 
-function Navbar() {
+function PortfolioNavbar() {
   const { t } = useTranslation();
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -39,6 +40,7 @@ function Navbar() {
       navigate("/login");
     } else {
       dispatch(logout());
+      clearAuth();
     }
   };
 
@@ -109,4 +111,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default PortfolioNavbar;

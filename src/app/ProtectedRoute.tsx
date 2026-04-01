@@ -1,14 +1,14 @@
-import { useSelector } from 'react-redux';
-import type { RootState } from '@/store/store';
-import { Navigate } from 'react-router';
+import { useSelector } from "react-redux";
+import type { RootState } from "@/app/store";
+import { Navigate } from "react-router";
 
-function ProtectedRoute({ children }: any) {
+function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const isAuthenticated = useSelector(
     (state: RootState) => state.auth.isAuthenticated,
   );
 
   if (!isAuthenticated) {
-    return <Navigate to={'/login'} />;
+    return <Navigate to={"/login"} replace />;
   }
 
   return children;

@@ -1,59 +1,11 @@
-import { useDispatch } from "react-redux";
-import { fakeLogin } from "@/services/auth.service";
-import { useNavigate } from "react-router";
-import { login } from "@/store/slices/authSlice";
-import type { AppDispatch } from "@/store/store";
-import { useState } from "react";
-import InfoTooltip from "@/components/dashboard/InfoTooltip";
-import LoginForm from "@/components/dashboard/LoginForm";
+import InfoTooltip from "@/features/auth/components/InfoTooltip";
+import LoginForm from "@/features/auth/sections/LoginForm";
 import { useTranslation } from "react-i18next";
-import BackgroundAnimated from "@/components/dashboard/BackgroundAnimated";
+import BackgroundAnimated from "@/features/auth/sections/BackgroundAnimated";
 
 function Login() {
   const { t } = useTranslation();
-  const dispatch = useDispatch<AppDispatch>();
-  const navigate = useNavigate();
-
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<number | null>(null);
-
-  const handleLogin = async (data: { email: string; password: string }) => {
-    setError(null);
-    setLoading(true);
-
-    try {
-      const res = await fakeLogin(data.email, data.password);
-
-      const { user_information, status, token } = res.data;
-
-      dispatch(
-        login({
-          user: user_information,
-          status,
-          token,
-        }),
-      );
-
-      switch (status) {
-        case "ACTIVE":
-          navigate("/dashboard");
-          break;
-
-        case "CHANGE_PASSWORD":
-          navigate("/change-password", {
-            state: { user: user_information },
-          });
-          break;
-
-        default:
-          navigate("/");
-      }
-    } catch (error: any) {
-      setError(error.code || "Login error");
-      setLoading(false);
-    }
-  };
-
+  
   return (
     <>
       <BackgroundAnimated
@@ -81,13 +33,7 @@ function Login() {
               {t("dashboard.login.title")}
             </h1>
 
-            {error === 404 ? (
-              <h2 className="-mt-4 mb-2 text-center text-base text-red-500">
-                {t("dashboard.login.error")}
-              </h2>
-            ) : null}
-
-            <LoginForm onSubmit={handleLogin} loading={loading} />
+            <LoginForm />
           </div>
         }
       />

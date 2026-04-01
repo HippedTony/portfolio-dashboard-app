@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import ExperienceCard from "./ExperienceCard";
-import SkillsCard from "./SkillsCard";
+import ExperienceCard from "@/features/portfolio/components/ExperienceCard";
+import SkillsCard from "@/features/portfolio/components/SkillsCard";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 
 import "react-vertical-timeline-component/style.min.css";
