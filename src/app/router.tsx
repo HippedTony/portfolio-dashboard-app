@@ -13,7 +13,7 @@ import ProtectedRoute from "@/app/ProtectedRoute";
 import AppLayout from "@/layouts/AppLayout";
 import Calendar from "@/pages/Calendar";
 
-export const router = createBrowserRouter([
+const routes = [
   {
     path: "/",
     element: <MainLayout />,
@@ -45,4 +45,8 @@ export const router = createBrowserRouter([
       },
     ],
   },
-]);
+];
+
+export const router = createBrowserRouter(routes, {
+  basename: "/portfolio-dashboard-app/",
+});
