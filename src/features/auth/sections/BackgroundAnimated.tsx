@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import threejs2 from "@/assets/images/threejs2.png";
+import threejs2 from "@/assets/webp/threejs2.webp";
 
 type Props = {
   component: React.ReactNode;
