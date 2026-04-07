@@ -1,25 +1,43 @@
 import { useState } from "react";
 
 const skills = {
-  core: [
-    "React",
-    "Next.js",
-    "Node.js",
-    "JavaScript/TypeScript",
-    "React Three Fiber",
-  ],
-  technologies: [
-    "Angular",
-    "NestJS",
-    "MongoDB",
+  languages: [
+    "JavaScript",
+    "TypeScript",
+    "HTML5",
+    "CSS",
+    "Python",
+    "Dart",
+    "Java",
     "SQL",
-    "Firebase",
-    "Redux Toolkit",
-    "React Query",
-    "React Native",
   ],
-  tools: ["GitHub", "Vite", "WordPress"],
-  extras: ["Three.js", "Flutter", "Python", "Java", "C#", "React Native"],
+  webTechnologies: [
+    "React.js",
+    "Angular",
+    "Next.js",
+    "Three.js",
+    "React Three Fiber",
+    "Tailwind CSS",
+    "Boostrap",
+    "Material UI",
+    "Radix UI",
+    "Zustand",
+    "Redux",
+    "React Query",
+    "Axios",
+    "Vite",
+    "WordPress",
+  ],
+  backendFrameworks: [
+    "Node.js",
+    "Express",
+    "NestJS",
+    "Django",
+    "GraphQL",
+    "Apollo",
+    "tRPC",
+  ],
+  databases: ["MongoDB", "QSLite", "Firebase", "SQL Server"],
 };
 
 function SkillsCard() {
