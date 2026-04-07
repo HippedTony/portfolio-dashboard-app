@@ -28,12 +28,12 @@
         {
           "company": "Spacelab MX",
           "role": "Frontend Developer",
-          "period": "2022 - 2025",
+          "period": "2022 - 2026",
           "icon": "spacelab",
           "description": [
-            "Desarrollo y mantenimiento de aplicaciones web utilizando React y Next.js. Implementé soluciones de manejo de estado global usando React Context y Redux Toolkit.",
-            "Desarrollo de sistemas en tiempo real para gestión de drones y localización, integrando mapas, contenido multimedia y herramientas de reporte. Creación de dashboards y vistas de configuración para sistemas críticos.",
-            "Colaboración con equipos de backend, diseño y producto en entornos ágiles."
+            "Desarrollé una aplicación web con React usando componentes reutilizables y patrones de diseño con Storybook. Se crearon rutas de monitoreo, estatus de vuelo y asignación de misiones con múltiples vistas.",
+            "Diseñé e implementé sitios web institucionales con React y WordPress, incorporando videos y animaciones.",
+            "Colaboré con equipos multidisciplinarios en entornos ágiles, contribuyendo con la planeación, diseño e implementación de nuevas interfaces y funcionalidades."
           ]
         },
         {
@@ -42,8 +42,8 @@
           "period": "2021 - 2022",
           "icon": "showmac",
           "description": [
-            "Diseño y desarrollo de aplicaciones web y móviles responsivas utilizando Angular y Flutter. Integración de interfaces frontend con servicios backend y plataformas en la nube.",
-            "Desarrollo de interfaces multiplataforma optimizadas para rendimiento y usabilidad. Despliegue y hosting utilizando GitHub Pages y HostGator."
+            "Desarrollé e implementé aplicaciones web y móviles responsivas con Angular y Flutter con funcionalidades backend y conexión con servicios en la nube usando Firebase (Realtime Database y FireStore).",
+            "Gestioné el despliegue y hosting de aplicaciones en plataformas como GitHub Pages, Firebase Hosting y VPS."
           ]
         }
       ],
@@ -55,20 +55,20 @@
         {
           "name": "Drone Dashboard",
           "image": "drone_dashboard",
-          "description": "Dashboard en tiempo real para monitoreo y gestión de drones con visualización de datos y mapas interactivos.",
-          "technologies": ["React", "TypeScript", "Redux", "WebSockets"]
+          "description": "Desarrollé la arquitectura frontend de una aplicación web para gestionar operaciones de drones autónomos. Implementé visualización de datos en tiempo real para la telemetría de drones, seguimiento de misiones y estatus de operaciones con vistas interactivas, incluyendo: mapas, tablas, calendarios y reportes PDF.",
+          "technologies": ["React", "JavaScript", "Tailwind CSS", "Storybook"]
         },
         {
           "name": "3D Portfolio Experience",
           "image": "portfolio",
-          "description": "Portafolio interactivo con modelos 3D y shaders personalizados usando React Three Fiber.",
-          "technologies": ["Three.js", "React Three Fiber", "GLSL", "Tailwind"]
+          "description": "Diseñé y desarrollé mi portafolio profesional utilizando React.js y Tailwind CSS, incorporando animaciones y visualizaciones 3D con Three.js y React Three Fiber",
+          "technologies": ["React", "Three.js", "React Three Fiber", "Redux", "Next.js", "Tailwind CSS", "TypeScript"]
         },
         {
           "name": "E-commerce Platform",
           "image": "nutrimarket",
           "description": "Aplicación web completa con carrito de compras, autenticación y gestión de productos.",
-          "technologies": ["Next.js", "Node.js", "MongoDB", "Stripe"]
+          "technologies": ["WordPress", "WooCommerce", "Hostinger"]
         }
       ]
     }

@@ -28,12 +28,12 @@
         {
           "company": "Spacelab MX",
           "role": "Frontend Developer",
-          "period": "2022 - 2025",
+          "period": "2022 - 2026",
           "icon": "spacelab",
           "description": [
-            "Developed and maintained web apps using React and Next.js. Implemented gloal state management solutions useing React Context and Redux Toolkit.",
-            "Worked on real-time frone and location management systems featuring maps, multimedia content, and reporting tools.Created dashboards and configurations views for mission-critical systems.",
-            "Collaborated with backend, design and product teams in agile environments."
+            "Developed a React-based web application using reusable components and design patterns with Storybook, including monitoring of routes, flight status, and scheduled mission through multiple views.",
+            "Designed and implemented institutional websites using React and WordPress, featuring videos and animations.",
+            "Collaborated with cross-functional teams in agile environments, contributing to the planning, design, and implementation of new interfaces and functionalities."
           ]
         },
         {
@@ -42,8 +42,8 @@
           "period": "2021 - 2022",
           "icon": "showmac",
           "description": [
-            "Designed and developed responsive web and mobile apps using Angular and Flutter. Integrated frontend interfaces with backend services and cloud platforms.",
-            "Built cross-platform interfaces optimized for performance and usability. Managed deployment and hosting using Github Pages and HostGatos."
+            "Developed and implemented responsive web and mobile applications using Angular and flutter, integrating backend functionality with Firebase (Realtime Database and Firestore).",
+            "Managed application deployment and hosting on platforms such as GitHub Pages, Firebase Hosting and VPS."
           ]
         }
       ],
@@ -55,14 +55,14 @@
         {
           "name": "Drone Dashboard",
           "image": "drone_dashboard",
-          "description": "Real-time dashboard for drone monitoring and management with data visualization and interactive maps.",
-          "technologies": ["React", "JavaScript", "Redux", "Node.js", "Tailwind"]
+          "description": "Developed the frontend architecture of a web application for managing autonomous drone operations. Implemented real-time data visualization for drone telemetry, mission tracking, and operational status through interactive views, including maps, tables, calendars and PDF reports",
+          "technologies": ["React", "JavaScript", "Tailwind CSS", "Storybook"]
         },
         {
           "name": "3D Portfolio Experience",
           "image": "portfolio",
-          "description": "Interactive portfolio with 3D models and custom shaders using React Three Fiber.",
-          "technologies": ["React", "Three.js", "React Three Fiber", "GLSL", "Tailwind", "TypeScript"]
+          "description": "Designed and developed my professional portfolio using React and Tailwind CSS, incorporating animations and 3D visualizations with Three.js and React Three Fiber.",
+          "technologies": ["React", "Three.js", "React Three Fiber", "Redux", "Next.js", "Tailwind CSS", "TypeScript"]
         },
         {
           "name": "E-commerce Platform",
