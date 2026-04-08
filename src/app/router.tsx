@@ -12,6 +12,9 @@ import Login from "@/pages/Login";
 import ProtectedRoute from "@/app/ProtectedRoute";
 import AppLayout from "@/layouts/AppLayout";
 import Calendar from "@/pages/Calendar";
+import Missions from "@/pages/Missions";
+import Reports from "@/pages/Reports";
+import Monitoring from "@/pages/Monitoring";
 
 const routes = [
   {
@@ -40,8 +43,21 @@ const routes = [
         element: <Dashboard />,
       },
       {
+        path: "/missions",
+        element: <Missions />,
+      },
+      {
+        path: "/reports",
+        element: <Reports />,
+      },
+
+      {
         path: "/calendar",
         element: <Calendar />,
+      },
+      {
+        path: "/monitoring",
+        element: <Monitoring />,
       },
     ],
   },

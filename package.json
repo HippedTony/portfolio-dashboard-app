@@ -18,6 +18,7 @@
     "@reduxjs/toolkit": "^2.11.2",
     "@tailwindcss/vite": "^4.2.2",
     "@types/three": "^0.183.1",
+    "dayjs": "^1.11.20",
     "i18next": "^25.10.9",
     "i18next-browser-languagedetector": "^8.2.1",
     "r3f-perf": "^7.2.3",

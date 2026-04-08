@@ -5,7 +5,7 @@ function MainLayout() {
   return (
     <>
       <PortfolioNavbar />
-      <main>
+      <main className="max-w-7xl">
         <Outlet />
       </main>
     </>

@@ -40,11 +40,8 @@ function Home() {
     <>
       <Toaster position="top-center" reverseOrder={false} />
       <Hero />
-
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <About />
-        <Projects />
-      </div>
+      <About />
+      <Projects />
     </>
   );
 }
