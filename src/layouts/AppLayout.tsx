@@ -1,13 +1,13 @@
 import AppNavbar from "@/shared/components/navigation/AppNavbar";
-import PortfolioNavbar from "@/shared/components/navigation/PortfolioNavbar";
+import SideMenu from "@/shared/components/navigation/SideMenu";
 import { Outlet } from "react-router";
 
 function AppLayout() {
   return (
     <>
       <AppNavbar />
-      <PortfolioNavbar />
-      <main>
+      <SideMenu />
+      <main className="min-h-dvh pt-28.75 bg-dashboard">
         <Outlet />
       </main>
     </>
