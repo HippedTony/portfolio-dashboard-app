@@ -18,9 +18,9 @@ function AppNavbarClock({ children }: AppNavbarClockProps) {
 
   return (
     <>
-      <p className="w-20">{currentDateTime.format("DD/MM/YY")}</p>
+      <p className="xl:w-20">{currentDateTime.format("DD/MM/YY")}</p>
       {children}
-      <p className="w-18 text-center">{currentDateTime.format("HH:mm")}</p>
+      <p className="text-center xl:w-18">{currentDateTime.format("HH:mm")}</p>
     </>
   );
 }

@@ -7,8 +7,10 @@ function AppLayout() {
     <>
       <AppNavbar />
       <SideMenu />
-      <main className="min-h-dvh pt-28.75 bg-dashboard">
-        <Outlet />
+      <main className="bg-dashboard min-h-dvh pt-28.75">
+        <div className="max-w-480 mx-auto font-titillium-web">
+          <Outlet />
+        </div>
       </main>
     </>
   );

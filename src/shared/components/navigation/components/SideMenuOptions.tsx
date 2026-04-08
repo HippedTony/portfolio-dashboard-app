@@ -4,18 +4,27 @@ interface SideMenuOptionsProps {
   icon: React.ReactNode;
   linkTo: string;
   text: string;
+  currentLocation: string;
 }
 
-function SideMenuOptions({ icon, linkTo, text }: SideMenuOptionsProps) {
+function SideMenuOptions({
+  icon,
+  linkTo,
+  text,
+  currentLocation,
+}: SideMenuOptionsProps) {
   return (
-    <li className="inline-table h-5 w-full rounded-lg px-2 py-3 hover:cursor-pointer hover:bg-[#24292e66] hover:backdrop-blur-md">
+    <Link
+      to={linkTo}
+      className={`hover:bg-navbar-option inline-table h-5 w-full rounded-lg px-2 py-3 hover:cursor-pointer hover:backdrop-blur-md ${
+        currentLocation === linkTo ? "bg-navbar-option backdrop-blur-md" : ""
+      }`}
+    >
       <div className="flex items-center">
         {icon}
-        <Link to={linkTo} className="mb-0">
-          {text}
-        </Link>
+        <p className="mb-0">{text}</p>
       </div>
-    </li>
+    </Link>
   );
 }
 

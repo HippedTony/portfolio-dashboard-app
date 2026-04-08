@@ -8,6 +8,10 @@
 
   --color-login: rgba(28, 27, 31, 0.9);
   --color-dashboard: rgb(36, 41, 46);
+  --color-navbar: rgba(56, 63, 69, 0.6);
+  --color-navbar-hover: rgba(56, 63, 69, 0.4);
+  --color-navbar-option: rgba(36, 41, 46, 0.4);
+  --font-titillium-web: Titillium Web;
   --shadow-login:
     0px 6px 14px 0px rgba(7, 13, 13, 0.1),
     0px 25px 25px 0px rgba(7, 13, 13, 0.09),
@@ -36,11 +40,9 @@
 body {
   background-color: black;
   color: white;
-  /* font-family: Titillium Web; */
 }
 
 main {
-  max-width: 1280px;
   margin-inline: auto;
   padding-inline: 16px;
 }
