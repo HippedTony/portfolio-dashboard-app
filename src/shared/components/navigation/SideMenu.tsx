@@ -15,6 +15,8 @@ import {
 import { MdOutlineDashboard } from "react-icons/md";
 import { TbTargetArrow, TbReportSearch } from "react-icons/tb";
 
+import freelanceImg from "@/assets/images/freelance.png";
+
 const menuOptions = [
   {
     icon: <MdOutlineDashboard className="mr-4 size-6" />,
@@ -87,10 +89,7 @@ function SideMenu() {
           >
             <FaAngleLeft className="h-9 w-5 p-1" />
           </button>
-          <img
-            src="https://picsum.photos/id/237/64/64"
-            className="ms-3 size-11 rounded-full"
-          />
+          <img src={freelanceImg} className="ms-3 size-11 rounded-full" />
           <h5 className="ms-2">Tony Paniagua</h5>
           <button
             onClick={handleLogout}
