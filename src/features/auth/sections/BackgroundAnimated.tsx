@@ -29,7 +29,7 @@ function BackgroundAnimated({ component }: Props) {
         <img
           key={index}
           src={image}
-          className="absolute h-dvh w-dvw bg-contain bg-center bg-no-repeat opacity-0 transition-all duration-100 ease-in-out"
+          className="absolute left-0 h-dvh w-dvw bg-contain bg-center bg-no-repeat opacity-0 transition-all duration-100 ease-in-out"
           style={{ opacity: photo === index ? 1 : 0 }}
         />
       ))}
