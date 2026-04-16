@@ -4,13 +4,13 @@ import MissionGallery from "@/features/dashboard/sections/MissionGallery";
 
 function Dashboard() {
   return (
-    <div className="mx-4 flex h-auto max-h-[calc(100vh-115px)] flex-col overflow-clip lg:mx-7.5">
+    <div className="xs:mx-4 flex h-[calc(100vh-115px)] flex-col overflow-clip lg:mx-7.5">
       <DroneList />
 
-      <div className="bg-custom-border my-4 h-[0.5px] lg:my-7.5" />
+      <div className="bg-custom-border my-4 min-h-[0.5px] lg:my-7.5" />
 
-      <div className="mb-4 flex-1 overflow-y-auto text-center lg:mb-12">
-        <div className="flex h-auto w-full justify-center gap-5 md:h-full">
+      <div className="mb-4 grid h-[calc(100vh-414px)] text-center lg:mb-12 lg:h-full">
+        <div className="flex w-full flex-col gap-5 overflow-auto lg:flex-row lg:justify-center">
           <DashboardFlights />
           <MissionGallery />
         </div>

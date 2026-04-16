@@ -6,8 +6,11 @@ function DashboardFlights() {
   const [activeTab, setActiveTab] = useState("next");
 
   return (
-    <div className="mb-5 h-full flex-auto p-0 w-1/2 lg:flex-1 overflow-y-scroll">
-      <div role="tablist" className="flex items-start mb-5 gap-4">
+    <div className="grid max-h-[calc(100vh-474px)] grid-rows-[auto_1fr] p-0 lg:w-1/2">
+      <div
+        role="tablist"
+        className="xs:ms-4 ms-3 flex items-start xs:gap-4 lg:ms-0 lg:mb-5"
+      >
         <DashboardFlightsTab
           tabName="next"
           activeTab={activeTab}

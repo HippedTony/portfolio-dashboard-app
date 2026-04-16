@@ -36,7 +36,7 @@ function DashboardFlightsTabContent({ next }: DashboardFlightsTabContentProps) {
   return (
     <div
       role="tabpanel"
-      className="bg-navbar border-custom-border flex h-full flex-col gap-2 rounded-2xl border border-solid p-4 backdrop-blur-md"
+      className="bg-navbar border-custom-border flex flex-col gap-2 overflow-y-auto rounded-2xl border border-solid p-4 backdrop-blur-md"
     >
       <div className="flex items-center gap-3">
         <FaRegCalendarAlt className="xs:w-auto size-5" />
@@ -51,10 +51,9 @@ function DashboardFlightsTabContent({ next }: DashboardFlightsTabContentProps) {
               <DashboardFlightList key={flight.droneId} {...flight} />
             ))
           ) : (
-            flights.map((flight, key) => (
+            flights.map((flight) => (
               <>
                 <DashboardFlightList key={flight.droneId} {...flight} />
-                <DashboardFlightList key={flight.droneId + key} {...flight} />
               </>
             ))
           )

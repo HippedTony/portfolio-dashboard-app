@@ -1,6 +1,8 @@
 import { useState } from "react";
 import DroneCard from "../components/DroneCard";
 
+type DroneStatus = "ACTIVE" | "READY" | "INACTIVE";
+
 const drones = [
   {
     id: "1",
@@ -28,7 +30,13 @@ const drones = [
   },
 ];
 
-const droneStatus = ["Active", "Ready", "Inactive"];
+const droneStatus: DroneStatus[] = ["ACTIVE", "READY", "INACTIVE"];
+
+const statusColors: Record<DroneStatus, string> = {
+  ACTIVE: "bg-active",
+  READY: "bg-ready",
+  INACTIVE: "bg-inactive",
+};
 
 function DroneList() {
   const [selectedDroneId, setSelectedDroneId] = useState("0");
@@ -44,11 +52,14 @@ function DroneList() {
 
         <div className="xs:ml-auto xs:mr-0 mr-auto flex gap-2 p-0 md:gap-7">
           {droneStatus.map((status) => (
-            <div key={status} className="flex items-center justify-center gap-2 md:gap-3">
-              <div
-                className={`bg-${status.toLowerCase()} h-5 w-5 rounded-full`}
-              />
-              <p className="xs:text-base pr-2 text-sm md:pr-0">{status}</p>
+            <div
+              key={status}
+              className="flex items-center justify-center gap-2 md:gap-3"
+            >
+              <div className={`${statusColors[status]} h-5 w-5 rounded-full`} />
+              <p className="xs:text-base pr-2 text-sm capitalize md:pr-0">
+                {status.toLocaleLowerCase()}
+              </p>
             </div>
           ))}
         </div>
