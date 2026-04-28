@@ -1,6 +1,7 @@
 import droneDashboardImg from "@/assets/webp/drone_dashboard.webp";
 import portfolioImg from "@/assets/webp/portfolio.webp";
 import nutrimarketImg from "@/assets/webp/nutrimarket.webp";
+import type { ProjectCardProps } from "@/shared/types/projects.type";
 
 const imagesMap: Record<string, string> = {
   drone_dashboard: droneDashboardImg,
@@ -8,32 +9,21 @@ const imagesMap: Record<string, string> = {
   nutrimarket: nutrimarketImg,
 };
 
-interface ProjectCardProps {
-  project: {
-    name: string;
-    image: string;
-    description: string;
-    technologies: string[];
-  };
-  isTouchDevice: boolean;
-  isActive: boolean;
-  onClick: () => void;
-}
-
 function ProjectCard({
   project,
+  onClick,
+  className,
   isTouchDevice,
   isActive,
-  onClick,
 }: ProjectCardProps) {
   return (
     <div
-      className={`group rounded-xl border bg-gray-900 p-6 transition-all duration-300 ${
+      className={`${className.container} bg-bg-secondary flex flex-col rounded-2xl border p-6 transition duration-300 ${
         isTouchDevice
           ? isActive
-            ? "border-blue-500"
-            : "border-gray-800"
-          : "border-gray-800 hover:border-blue-500"
+            ? "border-accent-hover"
+            : "border-border"
+          : "border-border hover:border-accent-hover"
       }`}
       onClick={onClick}
     >
@@ -44,48 +34,23 @@ function ProjectCard({
           className="h-full w-full rounded-4xl object-cover"
         />
       </div>
-      <h3
-        className={`mt-5 text-xl font-semibold transition ${
-          isTouchDevice
-            ? isActive
-              ? "text-blue-400"
-              : ""
-            : "group-hover:text-blue-400"
-        }`}
-      >
+      <h3 className={`mt-5 text-xl font-semibold ${className.title}`}>
         {project.name}
       </h3>
 
-      <p className="mt-3 text-sm leading-relaxed text-gray-400">
+      <p className="text-text-secondary my-4 text-sm leading-relaxed">
         {project.description}
       </p>
 
-      <div className="mt-4 flex flex-wrap gap-2">
+      <div className="mt-auto flex flex-wrap gap-2">
         {project.technologies.map((tech, index) => (
-          <span
-            key={index}
-            className={`rounded-md border bg-gray-800 px-2 py-1 text-sm text-gray-300 transition ${
-              isTouchDevice
-                ? isActive
-                  ? "border-purple-500"
-                  : "border-green-400"
-                : "border-green-400 group-hover:border-purple-500"
-            }`}
-          >
+          <span key={index} className={className.technologies}>
             {tech}
           </span>
         ))}
       </div>
 
-      <div
-        className={`mt-6 h-0.5 bg-linear-to-r from-transparent via-blue-500 to-transparent transition ${
-          isTouchDevice
-            ? isActive
-              ? "opacity-100"
-              : "opacity-0"
-            : "opacity-0 group-hover:opacity-100"
-        }`}
-      ></div>
+      <div className={className.extra}></div>
     </div>
   );
 }

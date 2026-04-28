@@ -30,7 +30,7 @@ function About() {
   };
 
   return (
-    <section className="py-20">
+    <section className="py-20 px-4 md:px-6 lg:px-8">
       <h2 className="mb-6 text-3xl font-bold">{t("portfolio.about.title")}</h2>
 
       <p className="mb-12 max-w-3xl text-gray-300">

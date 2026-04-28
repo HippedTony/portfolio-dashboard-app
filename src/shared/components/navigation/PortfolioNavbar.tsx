@@ -4,7 +4,7 @@ import { NavLink, useNavigate } from "react-router";
 import { logout } from "@/features/auth/authSlice";
 import { useTranslation } from "react-i18next";
 import { useEffect, useRef, useState } from "react";
-import NavbarOptions from "@/shared/components/navigation/components/NavbarOptions";
+import NavbarOptions from "@/shared/components/navigation/components/portfolio/NavbarOptions";
 
 import { IoMenu, IoCloseSharp } from "react-icons/io5";
 import { clearAuth } from "@/shared/utils/authStorage";
@@ -55,12 +55,12 @@ function PortfolioNavbar() {
   return (
     <nav
       ref={navRef}
-      className="fixed top-0 z-20 flex w-full bg-zinc-950 px-6 py-3 text-white sm:px-16"
+      className="bg-bg-primary/80 border-border text-text-primary fixed top-0 left-1/2 z-20 flex w-full max-w-480 -translate-x-1/2 border-b px-4 py-1 backdrop-blur-sm md:px-6 lg:px-8"
     >
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
+      <div className="mx-auto flex w-full max-w-480 items-center gap-4">
         {/* Logo / Home */}
         <NavLink
-          className="rounded-md px-5 py-2.5 text-sm font-medium hover:text-white/75"
+          className="mr-auto rounded-md px-5 py-2.5 font-medium hover:text-white/75"
           to={"/"}
           onClick={closeMenu}
         >
@@ -74,13 +74,15 @@ function PortfolioNavbar() {
             closeMenu={closeMenu}
             handleLog={handleLog}
             toggleResume={toggleResume}
-            className="px-5 py-2.5 text-sm font-medium hover:text-white/75"
+            className="px-4 py-2 font-medium hover:text-white/75"
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
           />
         </div>
 
-        {/* Hamburger Button (Mobile) */}
+        {/* Hamburger Button (Desktop & Mobile) */}
         <button
-          className="text-2xl md:hidden"
+          className="text-2xl"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
           aria-expanded={isOpen}
@@ -90,7 +92,7 @@ function PortfolioNavbar() {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-12 right-6 rounded-lg border border-gray-800 bg-black transition-all duration-500 sm:right-16 md:hidden ${
+          className={`border-border bg-bg-primary fixed top-13 right-4 rounded-b-lg border transition-all duration-500 md:hidden ${
             isOpen
               ? "max-h-96 opacity-100"
               : "max-h-0 overflow-hidden opacity-0"
@@ -102,7 +104,9 @@ function PortfolioNavbar() {
               closeMenu={closeMenu}
               handleLog={handleLog}
               toggleResume={toggleResume}
-              className="py-2 hover:text-white/75"
+              className="py-1 hover:text-white/75"
+              isOpen={isOpen}
+              setIsOpen={setIsOpen}
             />
           </div>
         </div>

@@ -23,15 +23,10 @@
     background-color: #777;
   }
 
-  body {
-    background-color: black;
-    color: white;
-  }
-
-  main {
-    margin-inline: auto;
-    padding-inline: 16px;
-  }
+  /* body {
+    max-width: 1280px;
+    margin: auto;
+  } */
 
   p {
     font-size: var(--text-sm);
@@ -43,18 +38,9 @@
   }
 
   @media (min-width: 1024px) {
-    main {
-      padding-inline: 32px;
-    }
 
     p {
       font-size: var(--text-base);
-    }
-  }
-
-  @media (min-width: 640px) {
-    main {
-      padding-inline: 24px;
     }
   }
 }
@@ -69,6 +55,25 @@
 } */
 
 @theme {
+  /* Portfolio */
+  --color-bg-primary: #0b0f14;
+  --color-bg-secondary: #11161c;
+  --color-bg-tertiary: #1a222c;
+
+  --color-text-primary: #e6edf3;
+  --color-text-secondary: #9fb0c0;
+  --color-text-tertiary: #6b7a8c;
+
+  --color-accent: #4f8cff;
+  --color-accent-hover: #3b6fd9;
+
+  --color-border: #2a3441;
+
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+
+  /* App */
   --breakpoint-xs: 450px;
   --breakpoint-xxs: 380px;
 

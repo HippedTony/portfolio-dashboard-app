@@ -1,14 +1,59 @@
 {
   "portfolio": {
     "navbar": {
-      "home": "Home",
+      "home": "Tony.dev",
+      "projects": "Projects",
+      "skills": "Skills",
+      "contact": "Contact",
       "dashboard": "Dashboard",
       "login": "Login",
       "logout": "Logout"
     },
     "hero": {
-      "description": "Frontend Developer specialized in React and 3D experiences",
+      "title": "Hi!, I'm Tony",
+      "subtitle": "Frontend Developer specialized in React and 3D experiences",
+      "description": "I build production-ready applications using React, with 5+ years of experience delivering real-world solutions.",
       "projects": "View projects"
+    },
+    "featuredProjects": {
+      "title": "Featured Projects",
+      "items": [
+        {
+          "name": "Drone Dashboard",
+          "image": "drone_dashboard",
+          "description": "Developed the frontend architecture of a web application for managing autonomous drone operations. Implemented real-time data visualization for drone telemetry, mission tracking, and operational status through interactive views, including maps, tables, calendars and PDF reports",
+          "technologies": ["React", "JavaScript", "Tailwind CSS", "Storybook"]
+        },
+        {
+          "name": "3D Portfolio Experience",
+          "image": "portfolio",
+          "description": "Designed and developed my professional portfolio using React and Tailwind CSS, incorporating animations and 3D visualizations with Three.js and React Three Fiber.",
+          "technologies": ["React", "Three.js", "React Three Fiber", "Redux", "Next.js", "Tailwind CSS", "TypeScript"]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "items": [
+        {
+          "name": "Drone Dashboard",
+          "image": "drone_dashboard",
+          "description": "Developed the frontend architecture of a web application for managing autonomous drone operations. Implemented real-time data visualization for drone telemetry, mission tracking, and operational status through interactive views, including maps, tables, calendars and PDF reports",
+          "technologies": ["React", "JavaScript", "Tailwind CSS", "Storybook"]
+        },
+        {
+          "name": "3D Portfolio Experience",
+          "image": "portfolio",
+          "description": "Designed and developed my professional portfolio using React and Tailwind CSS, incorporating animations and 3D visualizations with Three.js and React Three Fiber.",
+          "technologies": ["React", "Three.js", "React Three Fiber", "Redux", "Next.js", "Tailwind CSS", "TypeScript"]
+        },
+        {
+          "name": "E-commerce Platform",
+          "image": "nutrimarket",
+          "description": "Full web application with shopping cart, authentication, and product management.",
+          "technologies": ["WordPress", "WooCommerce", "Hostinger"]
+        }
+      ]
     },
     "about": {
       "title": "About Me",
@@ -48,29 +93,6 @@
         }
       ],
       "skills": "Skills"
-    },
-    "projects": {
-      "title": "Projects",
-      "items": [
-        {
-          "name": "Drone Dashboard",
-          "image": "drone_dashboard",
-          "description": "Developed the frontend architecture of a web application for managing autonomous drone operations. Implemented real-time data visualization for drone telemetry, mission tracking, and operational status through interactive views, including maps, tables, calendars and PDF reports",
-          "technologies": ["React", "JavaScript", "Tailwind CSS", "Storybook"]
-        },
-        {
-          "name": "3D Portfolio Experience",
-          "image": "portfolio",
-          "description": "Designed and developed my professional portfolio using React and Tailwind CSS, incorporating animations and 3D visualizations with Three.js and React Three Fiber.",
-          "technologies": ["React", "Three.js", "React Three Fiber", "Redux", "Next.js", "Tailwind CSS", "TypeScript"]
-        },
-        {
-          "name": "E-commerce Platform",
-          "image": "nutrimarket",
-          "description": "Full web application with shopping cart, authentication, and product management.",
-          "technologies": ["WordPress", "WooCommerce", "Hostinger"]
-        }
-      ]
     }
   },
   "dashboard": {
