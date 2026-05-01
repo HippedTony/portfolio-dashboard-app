@@ -25,10 +25,6 @@ In short, this repository serves both as a portfolio and as a personal experimen
 You can explore the live version of this project here:
 🌐 https://hippedtony.github.io/portfolio-dashboard-app/
 
-Clone the repository:
-
-git clone https://github.com/your-username/your-repo.git
-
 Install dependencies:
 
 ```bash
