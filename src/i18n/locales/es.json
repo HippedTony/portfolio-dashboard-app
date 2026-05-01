@@ -11,9 +11,10 @@
     },
     "hero": {
       "title": "¡Hola!, soy Tony",
-      "subtitle": "Desarrollador Frontend especializado en React y expriencias 3D",
-      "description": "Desarrollo aplicaciones listas para producción utilizando React, con más de 5 años de experiencia ofreciendo soluciones reales.",
-      "projects": "Ver proyectos"
+      "subtitle": "Desarrollador front-end con más de 5 años de experiencia en la creación de aplicaciones escalables",
+      "description": "Desde plataformas de comercio electrónico hasta sistemas de gestión de drones en tiempo real, centrados en una arquitectura limpia, el rendimiento y una experiencia de usuario intuitiva.",
+      "projects": "Ver proyectos",
+      "contactMe": "Contáctame"
     },
     "featuredProjects": {
       "title": "Proyectos Destacados",
@@ -21,78 +22,105 @@
         {
           "name": "Drone Dashboard",
           "image": "drone_dashboard",
-          "description": "Desarrollé la arquitectura frontend de una aplicación web para gestionar operaciones de drones autónomos. Implementé visualización de datos en tiempo real para la telemetría de drones, seguimiento de misiones y estatus de operaciones con vistas interactivas, incluyendo: mapas, tablas, calendarios y reportes PDF.",
+          "description": "Desarrollé una aplicación web escalable para gestionar el funcionamiento autónomo de drones, que incluye telemetría en tiempo real, seguimiento de misiones y estado operativo a través de vistas interactivas, como mapas, tablas, calendarios e informes en PDF. Con una arquitectura multitenant para empresas, ubicaciones y rutas.",
           "technologies": ["React", "JavaScript", "Tailwind CSS", "Storybook"]
         },
         {
-          "name": "3D Portfolio Experience",
+          "name": "Portfolio Dashboard",
           "image": "portfolio",
-          "description": "Diseñé y desarrollé mi portafolio profesional utilizando React.js y Tailwind CSS, incorporando animaciones y visualizaciones 3D con Three.js y React Three Fiber",
-          "technologies": ["React", "Three.js", "React Three Fiber", "Redux", "Next.js", "Tailwind CSS", "TypeScript"]
+          "description": "Diseñé y desarrollé una aplicación de portafolio moderna que incluye componentes reutilizables, diseños adaptativos y elementos interactivos de la interfaz de usuario, prestando especial atención al rendimiento y la facilidad de mantenimiento.",
+          "technologies": [
+            "React",
+            "Three.js",
+            "React Three Fiber",
+            "Tailwind CSS",
+            "TypeScript"
+          ]
         }
       ]
     },
     "projects": {
-      "title": "Proyectos",
+      "title": "Otros Proyectos",
       "items": [
         {
-          "name": "Drone Dashboard",
-          "image": "drone_dashboard",
-          "description": "Desarrollé la arquitectura frontend de una aplicación web para gestionar operaciones de drones autónomos. Implementé visualización de datos en tiempo real para la telemetría de drones, seguimiento de misiones y estatus de operaciones con vistas interactivas, incluyendo: mapas, tablas, calendarios y reportes PDF.",
-          "technologies": ["React", "JavaScript", "Tailwind CSS", "Storybook"]
-        },
-        {
-          "name": "3D Portfolio Experience",
-          "image": "portfolio",
-          "description": "Diseñé y desarrollé mi portafolio profesional utilizando React.js y Tailwind CSS, incorporando animaciones y visualizaciones 3D con Three.js y React Three Fiber",
-          "technologies": ["React", "Three.js", "React Three Fiber", "Redux", "Next.js", "Tailwind CSS", "TypeScript"]
-        },
-        {
-          "name": "E-commerce Platform",
+          "name": "Plataforma E-commerce",
           "image": "nutrimarket",
-          "description": "Aplicación web completa con carrito de compras, autenticación y gestión de productos.",
+          "description": "Desarrolló una plataforma de comercio electrónico con todas las funciones, que incluye gestión de productos, integración de pagos e implementación en entornos de producción.",
           "technologies": ["WordPress", "WooCommerce", "Hostinger"]
         }
       ]
     },
+    "howIWork": {
+      "title": "Cómo trabajo",
+      "steps": [
+        {
+          "title": "Analizo",
+          "description": "Analizo los requisitos, los flujos de usuarios y las necesidades empresariales para definir soluciones claras y eficaces."
+        },
+        {
+          "title": "Arquitecto",
+          "description": "Diseño arquitecturas front-end escalables utilizando componentes reutilizables, patrones de diseño y estructuras modulares."
+        },
+        {
+          "title": "Desarrollo",
+          "description": "Creo aplicaciones de alta calidad utilizando React, TypeScript y herramientas modernas, prestando especial atención al rendimiento y a la facilidad de mantenimiento."
+        },
+        {
+          "title": "Iterar",
+          "description": "Perfecciono y mejoro las aplicaciones mediante los comentarios recibidos, la optimización y la mejora continua de la experiencia del usuario."
+        }
+      ]
+    },
+
     "about": {
-      "title": "Sobre mí",
-      "description": "Desarrollador Frontend con expriencia en aplicaciones web modernas usando React, NextJS y arquitecturas escalables. He trabajado en sistemas en tiempo real para gestión de drones y dashboards complejos.",
+      "skills": {
+        "title": "Habilidades Técnicas",
+        "skills": {
+          "languages": "Lenguajes",
+          "webTechnologies": "Tecnologías Web",
+          "backendFrameworks": "Frameworks Backend",
+          "databases": "Bases de Datos"
+        }
+      },
       "experience": "Experiencia",
       "professionalExperience": [
         {
           "company": "Freelance",
-          "role": "Fullstack Developer",
-          "period": "2026 - current",
+          "role": "Desarrollador Fullstack",
+          "period": "2026 - Actualidad",
           "icon": "freelance",
           "description": [
-            "Desarrollo y personalización de plataforma de comercio electrónico utilizando WordPress y WooCommerce, incluyendo gestión de productos, integración de pagos y diseño de interfaces responsivas. Despliegue y hosting con Hostinger",
-            "Diseño y desarrollo contínuo de un pertafolio personal y un sistema de gestión de contenido utilizando React, TypeScript, TailwindCSS y Three.js, permitioendo la actualización dinámica de proyectos y manejo modular de contenido. Desplegaod usando GitHub Pages."
+            "Desarrollé y personalicé plataformas de comercio electrónico con WordPress y WooCommerce, incluyendo la gestión de productos, la integración de pagos y el diseño de una interfaz de usuario adaptativa. Gestioné la implementación y el alojamiento a través de Hostinger.",
+            "Creé un portafolio personal y un sistema de gestión de contenidos utilizando React, TypeScript, Tailwind CSS y Three.js, lo que permite una gestión modular de los contenidos y actualizaciones dinámicas del proyecto. Se ha publicado mediante GitHub Pages."
           ]
         },
         {
           "company": "Spacelab MX",
-          "role": "Frontend Developer",
+          "role": "Desarrollador Frontend",
           "period": "2022 - 2026",
           "icon": "spacelab",
           "description": [
-            "Desarrollé una aplicación web con React usando componentes reutilizables y patrones de diseño con Storybook. Se crearon rutas de monitoreo, estatus de vuelo y asignación de misiones con múltiples vistas.",
-            "Diseñé e implementé sitios web institucionales con React y WordPress, incorporando videos y animaciones.",
-            "Colaboré con equipos multidisciplinarios en entornos ágiles, contribuyendo con la planeación, diseño e implementación de nuevas interfaces y funcionalidades."
+            "Desarrollé una aplicación web escalable basada en React utilizando componentes reutilizables y patrones de diseño con Storybook, lo que incluía el seguimiento de rutas, el estado de los vuelos y las misiones programadas en múltiples vistas.",
+            "He diseñado y desarrollado sitios web institucionales utilizando React y WordPress, integrando contenidos multimedia como vídeos y animaciones.",
+            "He colaborado con equipos multidisciplinares en entornos ágiles, contribuyendo a la planificación, el diseño y la implementación de nuevas funciones e interfaces."
           ]
         },
         {
           "company": "Showmac Entertainment",
-          "role": "Full Stack Developer",
+          "role": "Desarrollador Fullstack ",
           "period": "2021 - 2022",
           "icon": "showmac",
           "description": [
-            "Desarrollé e implementé aplicaciones web y móviles responsivas con Angular y Flutter con funcionalidades backend y conexión con servicios en la nube usando Firebase (Realtime Database y FireStore).",
-            "Gestioné el despliegue y hosting de aplicaciones en plataformas como GitHub Pages, Firebase Hosting y VPS."
+            "Desarrollé aplicaciones web y móviles adaptativas utilizando Angular y Flutter, integrando servicios de backend con Firebase (Realtime Database y Firestore).",
+            "Gestión de la implementación y el alojamiento de aplicaciones en plataformas como GitHub Pages, Firebase Hosting y entornos VPS."
           ]
         }
-      ],
-      "skills": "Habilidades"
+      ]
+    },
+    "footer": {
+      "title": "Ponte en contacto",
+      "subTitle": "Abierto a nuevas oportunidades y colaboraciones.",
+      "contactMe": "Contáctame"
     }
   },
   "dashboard": {

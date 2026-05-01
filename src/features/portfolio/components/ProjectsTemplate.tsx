@@ -22,31 +22,26 @@ function ProjectsTemplate({
   const { t } = useTranslation();
 
   return (
-    <div className="mx-auto max-w-7xl ">
+    <div className="mx-auto max-w-7xl">
       <h2 className="mb-10 text-3xl font-bold">
-        {t("portfolio.projects.title")}
+        {featured
+          ? t("portfolio.featuredProjects.title")
+          : t("portfolio.projects.title")}
       </h2>
 
       <div className={`grid gap-6 md:grid-cols-2 ${lgGridCols}`}>
         {projects.map((project, i) => {
           const ProjectCardClassNames = featured
             ? {
-                container: 'group',
-                title: `mt-5 text-xl font-semibold transition ${
+                container: "group",
+                technologies: `rounded-md border bg-bg-tertiary px-2 py-1 text-sm text-text-secondary transition ${
                   isTouchDevice
                     ? activeIndex === i
-                      ? "text-accent-hover"
-                      : ""
-                    : "group-hover:text-accent-hover"
+                      ? "border-accent text-accent"
+                      : "border-border"
+                    : "border-border group-hover:border-accent group-hover:text-accent"
                 }`,
-                technologies: `rounded-md border bg-bg-tertiary px-2 py-1 text-sm text-gray-300 transition ${
-                  isTouchDevice
-                    ? activeIndex === i
-                      ? "border-purple-500"
-                      : "border-green-400"
-                    : "border-green-400 group-hover:border-purple-500"
-                }`,
-                extra: `mt-6 h-0.5 bg-linear-to-r from-transparent via-accent-hover to-transparent transition ${
+                extra: `mt-6 h-0.5 bg-linear-to-r from-transparent via-accent-secondary to-transparent transition ${
                   isTouchDevice
                     ? activeIndex === i
                       ? "opacity-100"
@@ -55,10 +50,9 @@ function ProjectsTemplate({
                 }`,
               }
             : {
-                container: '',
-                title: '',
-                technologies: `rounded-md border border-border bg-bg-tertiary px-2 py-1 text-sm text-gray-300`,
-                extra: '',
+                container: "",
+                technologies: `rounded-md border border-border bg-bg-tertiary px-2 py-1 text-sm text-text-secondary`,
+                extra: "",
               };
 
           return (

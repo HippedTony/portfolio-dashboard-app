@@ -18,23 +18,23 @@ function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div
-      className={`${className.container} bg-bg-secondary flex flex-col rounded-2xl border p-6 transition duration-300 ${
+      className={`${className.container} bg-bg-secondary flex flex-col rounded-2xl border p-6 transition-all duration-300 ${
         isTouchDevice
           ? isActive
-            ? "border-accent-hover"
+            ? "border-accent shadow-glow-15"
             : "border-border"
-          : "border-border hover:border-accent-hover"
+          : "border-border hover:border-accent hover:shadow-glow-20"
       }`}
       onClick={onClick}
     >
-      <div className="relative h-50 w-full">
+      <div className="relative h-55 w-full">
         <img
           src={imagesMap[project.image]}
           alt="project_image"
-          className="h-full w-full rounded-4xl object-cover"
+          className="xs:object-cover mx-auto size-full max-w-102.5 object-contain transition duration-300 group-hover:scale-[1.02]"
         />
       </div>
-      <h3 className={`mt-5 text-xl font-semibold ${className.title}`}>
+      <h3 className="text-text-primary mt-5 text-xl font-semibold">
         {project.name}
       </h3>
 

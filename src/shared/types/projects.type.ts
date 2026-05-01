@@ -15,7 +15,18 @@ export type ProjectCardProps = {
 
 export type ProjectCardClassNames = {
   container: string;
-  title: string;
   technologies: string;
   extra: string;
 };
+
+export type HowIWorkInformation = {
+  title: string;
+  description: string;
+}
+
+export type SkillsInformation = {
+  language: string;
+  webTechnologies: string;
+  backendFrameworks: string;
+  database: string,
+}

@@ -1,8 +1,8 @@
 import i18n from "@/i18n";
 import { useEffect, useState } from "react";
 
-import usImage from '@/assets/images/us.jpg'
-import mxImage from '@/assets/images/mx.jpg'
+import usImage from "@/assets/images/us.jpg";
+import mxImage from "@/assets/images/mx.jpg";
 
 function LanguageToggle() {
   const [lang, setLang] = useState<"es" | "en">(
@@ -25,24 +25,31 @@ function LanguageToggle() {
   return (
     <button
       onClick={toggleLanguage}
-      className="relative flex h-5.5 w-12 items-center rounded-full border border-gray-700 bg-gray-800 p-0.5 shadow-inner transition"
+      className="border-border bg-bg-secondary hover:border-accent hover:shadow-glow-10 relative mt-1 flex h-6 w-14 items-center rounded-full border p-0.5 transition-all duration-300"
     >
       {/* Sliding circle */}
       <div
-        className="absolute top-0.5 left-1 flex h-4 w-4 rounded-full bg-gray-100 shadow-[0_0_12px_rgba(59,130,246,0.6)] transition-all duration-300"
+        className="bg-bg-primary shadow-glow-10 absolute top-px left-1 flex size-5 items-center justify-center rounded-full transition-all duration-300"
         style={{
-          transform: `translateX(${isEnglish ? "125%" : "0%"})`,
+          transform: `translateX(${isEnglish ? "130%" : "0%"})`,
         }}
       >
-        <img src={isEnglish ? usImage : mxImage} className="rounded-full" />
+        <img
+          src={isEnglish ? usImage : mxImage}
+          className="size-4 rounded-full object-cover"
+        />
       </div>
 
       {/* Labels (background) */}
-      <div className="flex w-full justify-evenly px-0 text-xs">
-        <span className={`${!isEnglish ? "text-white" : "text-gray-400"}`}>
+      <div className="flex w-full justify-between px-2 text-[10px] font-medium">
+        <span
+          className={`transition ${!isEnglish ? "text-accent" : "text-text-tertiary"}`}
+        >
           ES
         </span>
-        <span className={`${isEnglish ? "text-white" : "text-gray-400"}`}>
+        <span
+          className={`transition ${isEnglish ? "text-accent" : "text-text-tertiary"}`}
+        >
           EN
         </span>
       </div>

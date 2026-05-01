@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import ExperienceCard from "@/features/portfolio/components/ExperienceCard";
-import SkillsCard from "@/features/portfolio/components/SkillsCard";
 import { VerticalTimeline } from "react-vertical-timeline-component";
+
+import ExperienceCard from "@/features/portfolio/components/ExperienceCard";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -30,40 +30,24 @@ function About() {
   };
 
   return (
-    <section className="py-20 px-4 md:px-6 lg:px-8">
-      <h2 className="mb-6 text-3xl font-bold">{t("portfolio.about.title")}</h2>
+    <section className="border-border border-t px-6 py-16 md:px-12 lg:px-24">
+      <div className="mx-auto max-w-7xl">
+        <h2 className="text-text-primary mb-10 text-2xl font-semibold">
+          {t("portfolio.about.experience")}
+        </h2>
 
-      <p className="mb-12 max-w-3xl text-gray-300">
-        {t("portfolio.about.description")}
-      </p>
-
-      <div className="">
-        <div>
-          <h3 className="flex justify-center text-5xl font-semibold text-blue-400 md:text-6xl">
-            {t("portfolio.about.experience")}
-          </h3>
-
-          <div className="mt-20 space-y-4">
-            <VerticalTimeline>
-              {professionalExperience.map((exp, i) => (
-                <ExperienceCard
-                  key={i}
-                  exp={exp}
-                  isTouchDevice={isTouchDevice}
-                  isActive={activeIndex === i}
-                  onClick={() => handleClick(i)}
-                />
-              ))}
-            </VerticalTimeline>
-          </div>
-        </div>
-
-        <div>
-          <h3 className="my-10 flex justify-center text-6xl font-semibold text-purple-400">
-            {t("portfolio.about.skills")}
-          </h3>
-
-          <SkillsCard />
+        <div className="mt-20 space-y-4">
+          <VerticalTimeline lineColor="#fcee09">
+            {professionalExperience.map((exp, i) => (
+              <ExperienceCard
+                key={i}
+                exp={exp}
+                isTouchDevice={isTouchDevice}
+                isActive={activeIndex === i}
+                onClick={() => handleClick(i)}
+              />
+            ))}
+          </VerticalTimeline>
         </div>
       </div>
     </section>

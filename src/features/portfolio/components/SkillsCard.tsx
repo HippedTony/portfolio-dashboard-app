@@ -1,4 +1,6 @@
+import type { SkillsInformation } from "@/shared/types/projects.type";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const skills = {
   languages: [
@@ -41,15 +43,22 @@ const skills = {
 };
 
 function SkillsCard() {
+  const { t } = useTranslation();
   const [isActive, setIsActive] = useState(false);
   const isTouchDevice = window.matchMedia("(hover: none)").matches;
 
+  const skillsTitles = t("portfolio.about.skills.skills", {
+    returnObjects: true,
+  }) as SkillsInformation;
+
   return (
     <div
-      className={`mx-auto flex w-11/12 flex-col rounded-lg border bg-black p-4 font-mono text-sm text-green-400 transition md:w-2/3 md:p-10 lg:w-1/2 ${
-        isActive
-          ? "scale-[1.1] border-purple-500"
-          : "border-gray-80 hover:scale-[1.1] hover:border-purple-500"
+      className={`bg-bg-secondary border-border text-text-secondary mx-auto w-11/12 rounded-xl border p-6 font-mono transition-all duration-300 md:w-2/3 md:p-8 ${
+        isTouchDevice
+          ? isActive
+            ? "border-accent shadow-glow-20 scale-[1.02]"
+            : "hover:border-accent hover:shadow-glow-15"
+          : "hover:border-accent hover:shadow-glow-20 hover:scale-[1.02]"
       }`}
       onClick={() => {
         if (isTouchDevice) {
@@ -57,22 +66,27 @@ function SkillsCard() {
         }
       }}
     >
-      {"{"}
-      <div className="ml-4">
-        {Object.entries(skills).map(([key, values], i) => (
-          <div key={i}>
-            <span className="text-blue-400">{key}</span>: [
-            {values.map((skill, index) => (
-              <span key={index}>
-                <span className="text-yellow-400">{skill}</span>
-                {index < values.length - 1 && ", "}
-              </span>
-            ))}
-            ],
+      <div className="space-y-6">
+        {Object.entries(skills).map(([category, values]) => (
+          <div key={category}>
+            {/* Category */}
+            <h3 className="text-text-primary mb-2 text-sm tracking-wider uppercase transition">
+              {skillsTitles[category as keyof SkillsInformation]}
+            </h3>
+
+            {/* Skills */}
+            <div className="flex flex-wrap gap-2">
+              {values.map((skill) => (
+                <span key={skill}>
+                  <span className="border-border bg-bg-tertiary text-text-secondary hover:text-accent hover:border-accent hover:shadow-glow-8 text-xm rounded-md border px-2 py-1 transition-all duration-300">
+                    {skill}
+                  </span>
+                </span>
+              ))}
+            </div>
           </div>
         ))}
       </div>
-      {"}"}
     </div>
   );
 }

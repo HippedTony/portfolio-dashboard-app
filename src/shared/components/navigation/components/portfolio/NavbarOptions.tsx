@@ -16,24 +16,26 @@ function NavbarOptions(props: NavbarProps) {
         <a href="#skills" className={className}>
           {t("portfolio.navbar.skills")}
         </a>
-        <a href="#contact" className={className}>
+        <a href="#footer" className={className}>
           {t("portfolio.navbar.contact")}
         </a>
       </div>
 
       {/* App Links (Desktop) */}
       <div
-        className={`border-border bg-bg-primary/80 fixed top-13 hidden rounded-b-lg border transition-all duration-500 sm:right-6 md:flex ${
-          isOpen ? "max-h-96 opacity-100" : "max-h-0 overflow-hidden opacity-0"
+        className={`border-border bg-bg-primary/90 fixed top-15 hidden rounded-xl border backdrop-blur-md transition-all duration-500 sm:right-6 md:flex ${
+          isOpen
+            ? "shadow-glow-20 max-h-96 opacity-100"
+            : "max-h-0 overflow-hidden opacity-0"
         }`}
       >
-        <div className="mb-2 flex flex-col items-center gap-2 p-2 backdrop-blur-sm">
+        <div className="mb-2 flex flex-col items-center gap-2 p-3">
           <NavbarAppLinks {...props} />
         </div>
       </div>
 
       {/* App Links (Mobile) */}
-      <div className="border-border mt-2 flex flex-col items-center gap-2 border-t-2 pt-2 md:hidden">
+      <div className="border-border mt-3 flex flex-col items-center gap-2 border-t pt-3 md:hidden">
         <NavbarAppLinks {...props} />
       </div>
     </>

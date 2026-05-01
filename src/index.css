@@ -56,22 +56,31 @@
 
 @theme {
   /* Portfolio */
-  --color-bg-primary: #0b0f14;
-  --color-bg-secondary: #11161c;
-  --color-bg-tertiary: #1a222c;
+  --color-bg-primary: #05070a;
+  --color-bg-secondary: #0b0f14;
+  --color-bg-tertiary: #121821;
 
-  --color-text-primary: #e6edf3;
-  --color-text-secondary: #9fb0c0;
-  --color-text-tertiary: #6b7a8c;
+  --color-text-primary: #e6f1ff;
+  --color-text-secondary: #9fb3c8;
+  --color-text-tertiary: #5f6b7a;
 
-  --color-accent: #4f8cff;
-  --color-accent-hover: #3b6fd9;
+  --color-accent: #fcee09;
+  --color-accent-hover: #d4c500;
 
-  --color-border: #2a3441;
+  --color-accent-secondary: #ff2bd6;
+  --color-accent-alt: #00f0ff;
 
-  --color-success: #22c55e;
-  --color-warning: #f59e0b;
-  --color-error: #ef4444;
+  --color-border: #1f2a36;
+
+  --color-success: #00ff9c;
+  --color-warning: #ffb300;
+  --color-error: #ff3b3b;
+
+  --shadow-glow-8: 0 0 8px #fcee09;
+  --shadow-glow-10: 0 0 10px #fcee09;
+  --shadow-glow-12: 0 0 12px #fcee09;
+  --shadow-glow-15: 0 0 15px #fcee09;
+  --shadow-glow-20: 0 0 20px #fcee09;
 
   /* App */
   --breakpoint-xs: 450px;
@@ -124,4 +133,9 @@
 .group.active .tooltip {
   opacity: 1;
   transform: scale(1);
+}
+
+.vertical-timeline::before {
+  background: #fcee09;
+  box-shadow: 0 0 8px #fcee09;
 }

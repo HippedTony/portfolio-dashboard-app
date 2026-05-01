@@ -11,63 +11,86 @@
     },
     "hero": {
       "title": "Hi!, I'm Tony",
-      "subtitle": "Frontend Developer specialized in React and 3D experiences",
-      "description": "I build production-ready applications using React, with 5+ years of experience delivering real-world solutions.",
-      "projects": "View projects"
+      "subtitle": "Frontend Developer with 5+ years of experience building scalable applications",
+      "description": "From e-commerce platforms to real-time drone management systems, focused on clean architecture, performance, and intuitive user experiences.",
+      "projects": "View projects",
+      "contactMe": "Contact Me"
     },
     "featuredProjects": {
       "title": "Featured Projects",
       "items": [
         {
-          "name": "Drone Dashboard",
+          "name": "Drone Management System",
           "image": "drone_dashboard",
-          "description": "Developed the frontend architecture of a web application for managing autonomous drone operations. Implemented real-time data visualization for drone telemetry, mission tracking, and operational status through interactive views, including maps, tables, calendars and PDF reports",
+          "description": "Developed a scalable web application for managing autonomous drone operation, including real-time telemetry, mission tracking, and operational status through interactive views, including maps, tables, calendars and PDF reports. With a multi-tenant architecture for companies, locations, and routes.",
           "technologies": ["React", "JavaScript", "Tailwind CSS", "Storybook"]
         },
         {
-          "name": "3D Portfolio Experience",
+          "name": "Portfolio Dashboard",
           "image": "portfolio",
-          "description": "Designed and developed my professional portfolio using React and Tailwind CSS, incorporating animations and 3D visualizations with Three.js and React Three Fiber.",
-          "technologies": ["React", "Three.js", "React Three Fiber", "Redux", "Next.js", "Tailwind CSS", "TypeScript"]
+          "description": "Designed and developed a modern portfolio application featuring reusable components, responsive layouts, and interactive UI elements, with a focus on performance and maintainability.",
+          "technologies": [
+            "React",
+            "Three.js",
+            "React Three Fiber",
+            "Tailwind CSS",
+            "TypeScript"
+          ]
         }
       ]
     },
     "projects": {
-      "title": "Projects",
+      "title": "Other Projects",
       "items": [
-        {
-          "name": "Drone Dashboard",
-          "image": "drone_dashboard",
-          "description": "Developed the frontend architecture of a web application for managing autonomous drone operations. Implemented real-time data visualization for drone telemetry, mission tracking, and operational status through interactive views, including maps, tables, calendars and PDF reports",
-          "technologies": ["React", "JavaScript", "Tailwind CSS", "Storybook"]
-        },
-        {
-          "name": "3D Portfolio Experience",
-          "image": "portfolio",
-          "description": "Designed and developed my professional portfolio using React and Tailwind CSS, incorporating animations and 3D visualizations with Three.js and React Three Fiber.",
-          "technologies": ["React", "Three.js", "React Three Fiber", "Redux", "Next.js", "Tailwind CSS", "TypeScript"]
-        },
         {
           "name": "E-commerce Platform",
           "image": "nutrimarket",
-          "description": "Full web application with shopping cart, authentication, and product management.",
+          "description": "Built a full-featured e-commerce platform with product management, payment integration, and deployment to production environments.",
           "technologies": ["WordPress", "WooCommerce", "Hostinger"]
         }
       ]
     },
+    "howIWork": {
+      "title": "How I Work",
+      "steps": [
+        {
+          "title": "Analyze",
+          "description": "I analyze requirements, user flows, and business needs to define clear and effective solutions."
+        },
+        {
+          "title": "Architect",
+          "description": "I design scalable frontend architectures using reusable components, design patterns, and modular structure."
+        },
+        {
+          "title": "Develop",
+          "description": "I build high-quality applications using React, TypeScript, and modern tools, focusing on performance and maintainability."
+        },
+        {
+          "title": "Iterate",
+          "description": "I refine and improve applications through feedback, optimization, and continuous enhancement of the user experience."
+        }
+      ]
+    },
     "about": {
-      "title": "About Me",
-      "description": "Frontend Developer with experience in modern web applications using React, Next.js, and scalable architectures. I have worked on real-time systems for drone management and complex dashboards.",
+      "skills": {
+        "title": "Technical Skills",
+        "skills": {
+          "languages": "Languages",
+          "webTechnologies": "Web Technologies",
+          "backendFrameworks": "Backend Frameworks",
+          "databases": "Databases"
+        }
+      },
       "experience": "Experience",
       "professionalExperience": [
         {
           "company": "Freelance",
           "role": "Fullstack Developer",
-          "period": "2026 - current",
+          "period": "2026 - Present",
           "icon": "freelance",
           "description": [
-            "Build and customized e-commerce platforms using WordPress and WooCommerce, including product managemenr, payment integration and responsive UI design. Managed deployment and hosting using Hostinger.",
-            "Developed a personal portfolio and content management system using React, TypeScript, TailwindCSS and Three.js, enabling dynamic project updates and modular content handling. Deployed using GitHub Pages."
+            "Developed and customized e-commerce platforms using WordPress and WooCommerce, including product management, payment integration, and responsive UI design. Managed deployment and hosting using Hostinger.",
+            "Built a personal portfolio and content management system using React, TypeScript, Tailwind CSS, and Three.js, enabling modular content handling and dynamic project updates. Deployed using GitHub Pages."
           ]
         },
         {
@@ -76,23 +99,27 @@
           "period": "2022 - 2026",
           "icon": "spacelab",
           "description": [
-            "Developed a React-based web application using reusable components and design patterns with Storybook, including monitoring of routes, flight status, and scheduled mission through multiple views.",
-            "Designed and implemented institutional websites using React and WordPress, featuring videos and animations.",
-            "Collaborated with cross-functional teams in agile environments, contributing to the planning, design, and implementation of new interfaces and functionalities."
+            "Developed a scalable React-based web application using reusable components and design patterns with Storybook, including monitoring of routes, flight status, and scheduled missions across multiple views.",
+            "Designed and implemented institutional websites using React and WordPress, integrating multimedia content such as videos and animations.",
+            "Collaborated with cross-functional teams in agile environments, contributing to the planning, design, and implementation of new features and interfaces."
           ]
         },
         {
           "company": "Showmac Entertainment",
-          "role": "Full Stack Developer",
+          "role": "Fullstack Developer",
           "period": "2021 - 2022",
           "icon": "showmac",
           "description": [
-            "Developed and implemented responsive web and mobile applications using Angular and flutter, integrating backend functionality with Firebase (Realtime Database and Firestore).",
-            "Managed application deployment and hosting on platforms such as GitHub Pages, Firebase Hosting and VPS."
+            "Developed responsive web and mobile applications using Angular and Flutter, integrating backend services with Firebase (Realtime Database and Firestore).",
+            "Managed application deployment and hosting across platforms such as GitHub Pages, Firebase Hosting, and VPS environments."
           ]
         }
-      ],
-      "skills": "Skills"
+      ]
+    },
+    "footer": {
+      "title": "Get in touch",
+      "subTitle": "Open to opportunities and collaborations.",
+      "contactMe": "Contact Me"
     }
   },
   "dashboard": {

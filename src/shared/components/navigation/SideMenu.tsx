@@ -80,7 +80,7 @@ function SideMenu() {
     <>
       <aside
         ref={menuRef}
-        className={`xs:left-7 bg-navbar font-titillium-web fixed top-7 left-4 z-50 float-left h-auto w-72 overflow-auto rounded-2xl border-r border-[rgba(255,255,255,0.1)] p-3 backdrop-blur-md transition-all duration-300 ease-in-out ${showMenu ? "translate-x-0 shadow-lg" : "-translate-x-80 shadow-none"}`}
+        className={`xs:left-7 bg-navbar font-titillium-web fixed top-7 left-4 z-50 float-left h-auto w-72 overflow-auto rounded-2xl border-r border-[rgba(255,255,255,0.1)] p-3 text-white backdrop-blur-md transition-all duration-300 ease-in-out ${showMenu ? "translate-x-0 shadow-lg" : "-translate-x-80 shadow-none"}`}
       >
         <div className="flex h-11 w-full items-center justify-center">
           <button
