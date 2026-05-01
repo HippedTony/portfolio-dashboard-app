@@ -1,30 +1,22 @@
-import { NavLink } from "react-router";
+import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
 import LanguageToggle from "./LanguageToggle";
+import type { NavbarProps } from "@/shared/types/navigation.types";
 
-interface NavbarOptionsProps {
-  isAuthenticated: boolean;
-  closeMenu: () => void;
-  handleLog: () => void;
-  toggleResume: () => void;
-  className?: string;
-}
-
-function NavbarOptions({
+function NavbarAppLinks({
   isAuthenticated,
   closeMenu,
   handleLog,
   toggleResume,
   className = "",
-}: NavbarOptionsProps) {
+}: NavbarProps) {
   const { t } = useTranslation();
-
   return (
     <>
       {isAuthenticated && (
-        <NavLink to={"/dashboard"} onClick={closeMenu} className={className}>
+        <Link to={"/dashboard"} onClick={closeMenu} className={className}>
           {t("portfolio.navbar.dashboard")}
-        </NavLink>
+        </Link>
       )}
 
       <button onClick={handleLog} className={className}>
@@ -42,4 +34,4 @@ function NavbarOptions({
   );
 }
 
-export default NavbarOptions;
+export default NavbarAppLinks;

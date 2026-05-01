@@ -10,7 +10,7 @@ function Login() {
     <>
       <BackgroundAnimated
         component={
-          <div className="bg-login shadow-login absolute top-1/2 left-1/2 z-50 h-auto w-72 -translate-1/2 rounded-2xl px-5 py-6 text-center xxs:w-87.5">
+          <div className="bg-login shadow-login absolute top-1/2 left-1/2 z-10 h-auto w-72 -translate-1/2 rounded-2xl px-5 py-6 text-center xxs:w-87.5">
             <InfoTooltip
               content={
                 <div>

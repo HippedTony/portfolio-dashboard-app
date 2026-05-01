@@ -5,7 +5,7 @@ function MainLayout() {
   return (
     <>
       <PortfolioNavbar />
-      <main className="max-w-7xl">
+      <main className="bg-bg-primary text-text-primary mx-auto pt-30">
         <Outlet />
       </main>
     </>

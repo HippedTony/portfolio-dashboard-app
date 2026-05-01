@@ -23,15 +23,10 @@
     background-color: #777;
   }
 
-  body {
-    background-color: black;
-    color: white;
-  }
-
-  main {
-    margin-inline: auto;
-    padding-inline: 16px;
-  }
+  /* body {
+    max-width: 1280px;
+    margin: auto;
+  } */
 
   p {
     font-size: var(--text-sm);
@@ -43,18 +38,9 @@
   }
 
   @media (min-width: 1024px) {
-    main {
-      padding-inline: 32px;
-    }
 
     p {
       font-size: var(--text-base);
-    }
-  }
-
-  @media (min-width: 640px) {
-    main {
-      padding-inline: 24px;
     }
   }
 }
@@ -69,6 +55,34 @@
 } */
 
 @theme {
+  /* Portfolio */
+  --color-bg-primary: #05070a;
+  --color-bg-secondary: #0b0f14;
+  --color-bg-tertiary: #121821;
+
+  --color-text-primary: #e6f1ff;
+  --color-text-secondary: #9fb3c8;
+  --color-text-tertiary: #5f6b7a;
+
+  --color-accent: #fcee09;
+  --color-accent-hover: #d4c500;
+
+  --color-accent-secondary: #ff2bd6;
+  --color-accent-alt: #00f0ff;
+
+  --color-border: #1f2a36;
+
+  --color-success: #00ff9c;
+  --color-warning: #ffb300;
+  --color-error: #ff3b3b;
+
+  --shadow-glow-8: 0 0 8px #fcee09;
+  --shadow-glow-10: 0 0 10px #fcee09;
+  --shadow-glow-12: 0 0 12px #fcee09;
+  --shadow-glow-15: 0 0 15px #fcee09;
+  --shadow-glow-20: 0 0 20px #fcee09;
+
+  /* App */
   --breakpoint-xs: 450px;
   --breakpoint-xxs: 380px;
 
@@ -119,4 +133,9 @@
 .group.active .tooltip {
   opacity: 1;
   transform: scale(1);
+}
+
+.vertical-timeline::before {
+  background: #fcee09;
+  box-shadow: 0 0 8px #fcee09;
 }

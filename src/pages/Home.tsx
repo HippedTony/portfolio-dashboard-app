@@ -3,6 +3,10 @@ import About from "@/features/portfolio/sections/About";
 import Hero from "@/features/portfolio/sections/Hero";
 import Projects from "@/features/portfolio/sections/Projects";
 import { useEffect, useRef } from "react";
+import FeaturedProjects from "@/features/portfolio/sections/FeaturedProjects";
+import HowIWork from "@/features/portfolio/sections/HowIWork";
+import Skills from "@/features/portfolio/sections/Skills";
+import Footer from "@/features/portfolio/sections/Footer";
 
 function Home() {
   const hasRun = useRef(false);
@@ -37,12 +41,16 @@ function Home() {
   }, []);
 
   return (
-    <>
+    <div className="mx-auto max-w-480">
       <Toaster position="top-center" reverseOrder={false} />
       <Hero />
-      <About />
+      <FeaturedProjects />
       <Projects />
-    </>
+      <HowIWork />
+      <Skills />
+      <About />
+      <Footer />
+    </div>
   );
 }
 
