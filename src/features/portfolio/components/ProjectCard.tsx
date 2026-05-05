@@ -1,12 +1,14 @@
 import droneDashboardImg from "@/assets/webp/drone_dashboard.webp";
 import portfolioImg from "@/assets/webp/portfolio.webp";
 import nutrimarketImg from "@/assets/webp/nutrimarket.webp";
+import laCatrina from "@/assets/webp/la_catrina.webp";
 import type { ProjectCardProps } from "@/shared/types/projects.type";
 
 const imagesMap: Record<string, string> = {
   drone_dashboard: droneDashboardImg,
   portfolio: portfolioImg,
   nutrimarket: nutrimarketImg,
+  la_catrina: laCatrina,
 };
 
 function ProjectCard({
@@ -49,6 +51,13 @@ function ProjectCard({
           </span>
         ))}
       </div>
+
+      <button
+        onClick={() => project.link && window.open(project.link, "_blank")}
+        className={`hover:text-accent hover:shadow-glow-10 mx-auto mt-4 self-start rounded-xl px-5 py-2.5 text-sm font-medium text-white transition-colors duration-300 ${project.link ? "" : "hidden"}`}
+      >
+        {project.linkButton}
+      </button>
 
       <div className={className.extra}></div>
     </div>

@@ -3,6 +3,8 @@ export type ProjectsInformation = {
   image: string;
   description: string;
   technologies: string[];
+  link?: string;
+  linkButton?: string;
 };
 
 export type ProjectCardProps = {

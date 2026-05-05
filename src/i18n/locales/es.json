@@ -47,6 +47,14 @@
           "image": "nutrimarket",
           "description": "Desarrolló una plataforma de comercio electrónico con todas las funciones, que incluye gestión de productos, integración de pagos e implementación en entornos de producción.",
           "technologies": ["WordPress", "WooCommerce", "Hostinger"]
+        },
+        {
+          "name": "Landing Page",
+          "image": "la_catrina",
+          "description": "Landing page moderna y de alto impacto desarrollada con React, Vite, Tailwind y Framer Motion, con animaciones fluidas y componentes de producto interactivos.",
+          "technologies": ["React", "Tailwind CSS", "TypeScript", "Framer Motion"],
+          "link": "https://aljo.mx",
+          "linkButton": "Ver proyecto"
         }
       ]
     },
