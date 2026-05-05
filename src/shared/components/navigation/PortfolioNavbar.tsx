@@ -79,7 +79,7 @@ function PortfolioNavbar() {
             closeMenu={closeMenu}
             handleLog={handleLog}
             toggleResume={toggleResume}
-            className="hover:text-accent hover:shadow-glow-10 px-5 py-2.5 font-medium transition-all duration-300"
+            className="hover:text-accent hover:shadow-glow-10 rounded-xl px-5 py-2.5 font-medium transition-all duration-300"
             isOpen={isOpen}
             setIsOpen={setIsOpen}
           />
