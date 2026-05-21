@@ -53,8 +53,8 @@
           "image": "la_catrina",
           "description": "Landing page moderna y de alto impacto desarrollada con React, Vite, Tailwind y Framer Motion, con animaciones fluidas y componentes de producto interactivos.",
           "technologies": ["React", "Tailwind CSS", "TypeScript", "Framer Motion"],
-          "link": "https://aljo.mx",
-          "linkButton": "Ver proyecto"
+          "link": "https://aljo.mx/dev",
+          "linkButton": "Ver proyecto (dev)"
         }
       ]
     },
