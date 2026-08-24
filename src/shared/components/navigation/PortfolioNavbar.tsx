@@ -47,7 +47,7 @@ function PortfolioNavbar() {
 
   const toggleResume = () => {
     setIsOpen(false);
-    const resumeURL = "/portfolio-dashboard-app/Resume.pdf";
+    const resumeURL = "/portfolio-dashboard-app/Jorge_Antonio_Paniagua_Ramos_Resume.pdf";
     window.open(resumeURL);
   };
 

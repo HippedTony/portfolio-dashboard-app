@@ -11,8 +11,8 @@
     },
     "hero": {
       "title": "Hi!, I'm Tony",
-      "subtitle": "Frontend Developer with 5+ years of experience building scalable applications",
-      "description": "From e-commerce platforms to real-time drone management systems, focused on clean architecture, performance, and intuitive user experiences.",
+      "subtitle": "Frontend Developer with 5+ years of experience building scalable and maintainable web applications",
+      "description": "Using React, TypeScript, and Next.js. Experienced in designing frontend architectures, reusable component systems, data-driven interfaces, GraphQL integrations, state management, and complex business workflows.",
       "projects": "View projects",
       "contactMe": "Contact Me"
     },
@@ -46,15 +46,17 @@
           "name": "E-commerce Platform",
           "image": "nutrimarket",
           "description": "Built a full-featured e-commerce platform with product management, payment integration, and deployment to production environments.",
-          "technologies": ["WordPress", "WooCommerce", "Hostinger"]
+          "technologies": ["WordPress", "WooCommerce", "Hostinger"],
+          "link": "https://nutrimarket.com.mx",
+          "linkButton": "View page"
         },
         {
           "name": "Landing Page",
           "image": "la_catrina",
           "description": "Modern, high-impact landing page built with React, Vite, Tailwind and Framer Motion, featuring smooth animations and interactive product components.",
           "technologies": ["React", "Tailwind CSS", "TypeScript", "Framer Motion"],
-          "link": "https://aljo.mx",
-          "linkButton": "View project"
+          "link": "https://aljo.mx/dev",
+          "linkButton": "View project (dev)"
         }
       ]
     },
@@ -83,43 +85,50 @@
       "skills": {
         "title": "Technical Skills",
         "skills": {
-          "languages": "Languages",
-          "webTechnologies": "Web Technologies",
-          "backendFrameworks": "Backend Frameworks",
-          "databases": "Databases"
+          "frontend": "Frontend",
+          "stateAndData": "State & Data",
+          "formsAndUI": "Forms & UI",
+          "backend": "Backend",
+          "databases": "Databases",
+          "other": "Other"
         }
       },
       "experience": "Experience",
       "professionalExperience": [
         {
-          "company": "Freelance",
-          "role": "Fullstack Developer",
-          "period": "2026 - Present",
-          "icon": "freelance",
+          "company": "Didacteca",
+          "role": "Frontend Developer",
+          "period": "Jun 2026 - Aug 2026",
+          "icon": "didacteca",
           "description": [
-            "Developed and customized e-commerce platforms using WordPress and WooCommerce, including product management, payment integration, and responsive UI design. Managed deployment and hosting using Hostinger.",
-            "Built a personal portfolio and content management system using React, TypeScript, Tailwind CSS, and Three.js, enabling modular content handling and dynamic project updates. Deployed using GitHub Pages."
+            "Developed and maintained a business application for inventory and distribution platform using React, TypeScript, Next.js, GraphQL, Apollo Client, and Tailwind CSS.",
+            "Designed reusable frontend architectures using custom hooks, shared components, React Hook Form, Zod, and state management.",
+            "Built complex data-driven interfaces for inventory, sales, orders, stock movements, and internal transfers, including advanced filtering, pagination, forms, and dynamic tables.",
+            "Optimized GraphQL data fetching and client-side caching strategies to keep application state synchronized across multiple workflows.",
+            "Refactored legacy implementations into reusable and maintainable frontend modules, improving code consistency and reducing duplicated logic.",
+            "Collaborated with backend, design and product teams in Scrum environments to deliver new features and improve user experience."
           ]
         },
         {
           "company": "Spacelab MX",
           "role": "Frontend Developer",
-          "period": "2022 - 2026",
+          "period": "Nov 2022 - Feb 2026",
           "icon": "spacelab",
           "description": [
-            "Developed a scalable React-based web application using reusable components and design patterns with Storybook, including monitoring of routes, flight status, and scheduled missions across multiple views.",
-            "Designed and implemented institutional websites using React and WordPress, integrating multimedia content such as videos and animations.",
-            "Collaborated with cross-functional teams in agile environments, contributing to the planning, design, and implementation of new features and interfaces."
+            "Developed a React-based web platform for monitoring autonomous drone operations, including mission management, flight status, telemetry, and operational workflows.",
+            "Designed reusable UI components and documented them using Storybook, promoting consistency and maintainability across the application.",
+            "Built interactive data-driven interfaces including dashboards, maps, tables, calendars, and operational status views.",
+            "Collaborated with multidisciplinary teams throughout the planning, development, testing, and delivery of new product features."
           ]
         },
         {
           "company": "Showmac Entertainment",
           "role": "Fullstack Developer",
-          "period": "2021 - 2022",
+          "period": "Jun 2021 - Nov 2022",
           "icon": "showmac",
           "description": [
-            "Developed responsive web and mobile applications using Angular and Flutter, integrating backend services with Firebase (Realtime Database and Firestore).",
-            "Managed application deployment and hosting across platforms such as GitHub Pages, Firebase Hosting, and VPS environments."
+            "Developed responsive web and mobile applications using Angular and Flutter, integrating backend functionality with Firebase Realtime Database and Firestore.",
+            "Managed application deployment and hosting across GitHub Pages, Firebase Hosting, and VPS environments."
           ]
         }
       ]

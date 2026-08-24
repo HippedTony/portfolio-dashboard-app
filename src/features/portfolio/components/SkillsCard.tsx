@@ -3,43 +3,34 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const skills = {
-  languages: [
-    "JavaScript",
+  frontend: [
+    "React",
+    "Next.js",
     "TypeScript",
+    "JavaScript",
     "HTML5",
     "CSS",
-    "Python",
-    "Dart",
-    "Java",
-    "SQL",
-  ],
-  webTechnologies: [
-    "React.js",
-    "Angular",
-    "Next.js",
-    "Three.js",
-    "React Three Fiber",
     "Tailwind CSS",
-    "Boostrap",
-    "Material UI",
-    "Radix UI",
-    "Zustand",
-    "Redux",
-    "React Query",
-    "Axios",
     "Vite",
-    "WordPress",
   ],
-  backendFrameworks: [
-    "Node.js",
-    "Express",
-    "NestJS",
-    "Django",
+  stateAndData: [
+    "Redux Toolkit",
+    "Zustand",
+    "React Query",
+    "Apollo Client",
     "GraphQL",
-    "Apollo",
-    "tRPC",
+    "REST APIs",
   ],
-  databases: ["MongoDB", "QSLite", "Firebase", "SQL Server"],
+  formsAndUI: [
+    "React Hook Form",
+    "Zod",
+    "Storybook",
+    "Radix UI",
+    "Material UI",
+  ],
+  backend: ["Node.js", "NestJS", "Express.js"],
+  databases: ["MongoDB", "Firebase", "SQL Server"],
+  other: ["Three.js", "React Three Fiber"],
 };
 
 function SkillsCard() {

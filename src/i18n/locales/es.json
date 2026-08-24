@@ -11,8 +11,8 @@
     },
     "hero": {
       "title": "¡Hola!, soy Tony",
-      "subtitle": "Desarrollador front-end con más de 5 años de experiencia en la creación de aplicaciones escalables",
-      "description": "Desde plataformas de comercio electrónico hasta sistemas de gestión de drones en tiempo real, centrados en una arquitectura limpia, el rendimiento y una experiencia de usuario intuitiva.",
+      "subtitle": "Desarrollador Frontend con más de 5 años de experiencia en el desarrollo de aplicaciones web escalables y mantenibles",
+      "description": "utilizando React, TypeScript y Next.js. Experiencia en el diseño de arquitecturas frontend, sistemas de componentes reutilizables, interfaces orientadas a datos, integraciones con GraphQL, gestión de estado y flujos de negocio complejos.",
       "projects": "Ver proyectos",
       "contactMe": "Contáctame"
     },
@@ -46,15 +46,17 @@
           "name": "Plataforma E-commerce",
           "image": "nutrimarket",
           "description": "Desarrolló una plataforma de comercio electrónico con todas las funciones, que incluye gestión de productos, integración de pagos e implementación en entornos de producción.",
-          "technologies": ["WordPress", "WooCommerce", "Hostinger"]
+          "technologies": ["WordPress", "WooCommerce", "Hostinger"],
+          "link": "https://nutrimarket.com.mx",
+          "linkButton": "Ver página"
         },
         {
           "name": "Landing Page",
           "image": "la_catrina",
           "description": "Landing page moderna y de alto impacto desarrollada con React, Vite, Tailwind y Framer Motion, con animaciones fluidas y componentes de producto interactivos.",
           "technologies": ["React", "Tailwind CSS", "TypeScript", "Framer Motion"],
-          "link": "https://aljo.mx",
-          "linkButton": "Ver proyecto"
+          "link": "https://aljo.mx/dev",
+          "linkButton": "Ver proyecto (dev)"
         }
       ]
     },
@@ -84,43 +86,50 @@
       "skills": {
         "title": "Habilidades Técnicas",
         "skills": {
-          "languages": "Lenguajes",
-          "webTechnologies": "Tecnologías Web",
-          "backendFrameworks": "Frameworks Backend",
-          "databases": "Bases de Datos"
+          "frontend": "Frontend",
+          "stateAndData": "Estado & Datos",
+          "formsAndUI": "Formularios & UI",
+          "backend": "Backend",
+          "databases": "Bases de datos",
+          "other": "Otros"
         }
       },
       "experience": "Experiencia",
       "professionalExperience": [
         {
-          "company": "Freelance",
-          "role": "Desarrollador Fullstack",
-          "period": "2026 - Actualidad",
-          "icon": "freelance",
+          "company": "Didacteca",
+          "role": "Desarrollador Frontend",
+          "period": "Jun 2026 - Ago 2026",
+          "icon": "didacteca",
           "description": [
-            "Desarrollé y personalicé plataformas de comercio electrónico con WordPress y WooCommerce, incluyendo la gestión de productos, la integración de pagos y el diseño de una interfaz de usuario adaptativa. Gestioné la implementación y el alojamiento a través de Hostinger.",
-            "Creé un portafolio personal y un sistema de gestión de contenidos utilizando React, TypeScript, Tailwind CSS y Three.js, lo que permite una gestión modular de los contenidos y actualizaciones dinámicas del proyecto. Se ha publicado mediante GitHub Pages."
+            "Desarrollé y mantuve una plataforma empresarial para la gestión de inventarios y distribución utilizando React, TypeScript, Next.js, GraphQL, Apollo Client y Tailwind CSS.",
+            "Diseñé arquitecturas frontend reutilizables mediante custom hooks, componentes compartidos, React Hook Form, Zod y soluciones de gestión de estado.",
+            "Desarrollé interfaces complejas orientadas a datos para inventarios, ventas, pedidos, movimientos de stock y transferencias internas, incluyendo filtros avanzados, paginación, formularios y tablas dinámicas.",
+            "Optimicé la obtención de datos mediante GraphQL y estrategias de caché del lado del cliente para mantener sincronizado el estado de la aplicación entre diferentes flujos de trabajo.",
+            "Refactoricé implementaciones existentes en módulos frontend reutilizables y mantenibles, mejorando la consistencia del código y reduciendo la duplicación de lógica.",
+            "Colaboré con los equipos de Backend, Diseño y Producto bajo metodología Scrum para desarrollar nuevas funcionalidades y mejorar la experiencia de usuario."
           ]
         },
         {
           "company": "Spacelab MX",
           "role": "Desarrollador Frontend",
-          "period": "2022 - 2026",
+          "period": "Nov 2022 - Feb 2026",
           "icon": "spacelab",
           "description": [
-            "Desarrollé una aplicación web escalable basada en React utilizando componentes reutilizables y patrones de diseño con Storybook, lo que incluía el seguimiento de rutas, el estado de los vuelos y las misiones programadas en múltiples vistas.",
-            "He diseñado y desarrollado sitios web institucionales utilizando React y WordPress, integrando contenidos multimedia como vídeos y animaciones.",
-            "He colaborado con equipos multidisciplinares en entornos ágiles, contribuyendo a la planificación, el diseño y la implementación de nuevas funciones e interfaces."
+            "Desarrollé una plataforma web basada en React para el monitoreo de operaciones con drones autónomos, incluyendo gestión de misiones, estados de vuelo, telemetría y flujos operativos.",
+            "Diseñé componentes de UI reutilizables y los documenté mediante Storybook, promoviendo la consistencia y mantenibilidad de la aplicación.",
+            "Desarrollé interfaces interactivas orientadas a datos, incluyendo dashboards, mapas, tablas, calendarios y vistas de estados operativos.",
+            "Colaboré con equipos multidisciplinarios durante la planeación, desarrollo, pruebas y entrega de nuevas funcionalidades."
           ]
         },
         {
           "company": "Showmac Entertainment",
           "role": "Desarrollador Fullstack ",
-          "period": "2021 - 2022",
+          "period": "Jun 2021 - Nov 2022",
           "icon": "showmac",
           "description": [
-            "Desarrollé aplicaciones web y móviles adaptativas utilizando Angular y Flutter, integrando servicios de backend con Firebase (Realtime Database y Firestore).",
-            "Gestión de la implementación y el alojamiento de aplicaciones en plataformas como GitHub Pages, Firebase Hosting y entornos VPS."
+            "Desarrollé aplicaciones web y móviles responsivas utilizando Angular y Flutter, integrando funcionalidades backend con Firebase Realtime Database y Firestore.",
+            "Gestioné el despliegue y hosting de aplicaciones en entornos como GitHub Pages, Firebase Hosting y VPS."
           ]
         }
       ]

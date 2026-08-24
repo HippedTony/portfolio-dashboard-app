@@ -27,8 +27,10 @@ export type HowIWorkInformation = {
 }
 
 export type SkillsInformation = {
-  language: string;
-  webTechnologies: string;
-  backendFrameworks: string;
-  database: string,
+  frontend: string;
+  stateAndData: string;
+  formsAndUI: string;
+  backend: string;
+  databases: string;
+  other: string;
 }

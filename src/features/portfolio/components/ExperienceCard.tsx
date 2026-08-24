@@ -3,11 +3,13 @@ import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import showmacImg from "@/assets/images/showmac.jpg";
 import spacelabImg from "@/assets/images/spacelab.png";
 import freelanceImg from "@/assets/images/freelance.png";
+import didactecaImg from "@/assets/images/didacteca.png";
 
 const imagesMap: Record<string, string> = {
   showmac: showmacImg,
   spacelab: spacelabImg,
   freelance: freelanceImg,
+  didacteca: didactecaImg,
 };
 
 interface ExperienceCardProps {
